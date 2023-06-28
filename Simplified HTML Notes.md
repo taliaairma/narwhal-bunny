@@ -113,6 +113,53 @@ Videos
 
 June 28, 2022:
 
+Before we begin our projects, it is required to declare certain elements to HTML files using <!DOCTYPE html>
+This declaration is an instruction and it must be the first ling of code in your HTML Document. It tells the browser what type of document to expect, along with what version of HTML is being used in the document. 
+
+The <html> tag indicates the coding to HTML.
+
+The Head
+The <head> element contain the metadata for a web page. Metadata is information about the page that isn't displayed directly on the web page.
+*The first item after your first HTML tag:
+<head>
+    </head>
+
+Page Titles
+A browser tab displays the title specified in the <title> tag. 
+The <title> tag is always inside of the <head>.
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Coding Journal</title>
+    </head>
+</html>
+
+Linking to other web pages
+You cna add links to web page by adding an anchor element <a> & inlcuding the text of the link in between the opening and closing tags.
+<a>The link to wikipedia</a>
+*Technically the link above is incomplete without the href attribute, there is no path to the link. 
+The href attribute is a hyperlink reference which is used to link to a path or the address to where a file is located.
+<a href="https://www.wikipedia.org/">The link to wikipedia</a>
+
+Opening link to a new window
+Target attribute specifies how a link should open one or more links on your web page link to an entirely different website, target attribute requires a value of _blank.
+<a href="https:/en.wikipedia.org/wiki/Brown_bear" target="_blank">The Brown bear</a>
+
+Linking to a Relative Page
+3 different files into one folder
+project-folder/
+|--about.html
+|--contact.html
+|--index.html
+HTML files are often stored in the same folder.
+<a href="./contact.html">Contact</a>
+The <a> tag is used with a relative path to link from the current HTML file to the contact.html file in the same folder.
+
+Linking at Will
+*Text-only hyperlinks only decrease your flexibility as a web-developer. 
+HTML allows you to turn nearly any element into 
+
+
 
 
     
