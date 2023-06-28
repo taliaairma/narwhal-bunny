@@ -157,7 +157,56 @@ The <a> tag is used with a relative path to link from the current HTML file to t
 
 Linking at Will
 *Text-only hyperlinks only decrease your flexibility as a web-developer. 
-HTML allows you to turn nearly any element into 
+HTML allows you to turn nearly any element into linkss by simply wrapping the <img> element with an <a> element.
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank"><img src="https://www.Prickly_pear_closeup.jpg" alt ="A red prickly pear fruit"/></a>
+
+Linking to the same page
+In order to link to a target on the same page, we must give the target an id:
+<p id="top">This is the top of the page!</p>
+<p id="bottom>This is the bottom</p>
+
+The <p> element is assigned an id of "top" and the <h1> element is assigned "bottom". *An id can be added to most elements on a web page.
+
+An id should be descriptive to make it easier to remember the purpose of a link. The target link is a string containing the # character and the target element's id.
+<ol>
+    <li><a href="#top">Top</a></li>
+    <li><a href="#bottom">Bottom</a></li>
+</ol>
+The links to <p id="top"> & <p id="bottom"> are embedded in an ordered list. An id is especially helpfuul for organizing content belonging to a div.
+
+Whitespace
+If you want to increase the space between two paragraphs on your web page, you would not be able to accomplish this by adding space between the paragraph element in the index.html file. The browser ignores whitespace html files when it renders a web page, so it cna be used as a tool to make code easier to read & follow.
+<body><p>Paragraph 1</p><p>Paragraph 2</p></body>
+Compare the example above to this:
+<body>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+</body>
+*This example is easier to read because each element is on its own line.
+
+Indentation
+<body>
+    <p>Paragraph 1</p>
+    <div>
+        <p>Paragraph 2</p>
+    </div>
+</body>
+Paragraph 1 and the <div> tag are nested inside of the <body> tag so they are indented two spaces. The paragraph 2 element is nested inside of the <div> tag so it is indented an additional two spaces.
+
+Comments
+Comments begin with <!-- and end with --> Any characters in between will be ignored by your browser.
+<!-- This is a comment that the browser will not display -->
+Including comments in your code is helpful for many reasons:
+1. They help you (and others) understand your code if you devided to come and review it at a much later date.
+2. They allow you to experiment with new code, without having to delete old code.
+<!-- Favourite Files Sections -->
+<p>The following is a list of my favourite film:</p>
+In this example, a valid HTML element (a paragraph element) has been "commented out". This practice is useful when there is code you want to experiment with, or return to, in the future.
+<!-- <p> Test Code </p> -->
+
+June 29, 2022:
+
+
 
 
 
