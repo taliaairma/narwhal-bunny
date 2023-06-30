@@ -1,4 +1,4 @@
-June 27, 2022:
+June 27, 2023:
 HTML Notes started.
 
 HTML provides structure ot the content appearing on a website, such as images, text or videos. Right-click on any page on the Internet and choose "inspect", and you'll see HTML in a panel of your screen.
@@ -204,7 +204,206 @@ Including comments in your code is helpful for many reasons:
 In this example, a valid HTML element (a paragraph element) has been "commented out". This practice is useful when there is code you want to experiment with, or return to, in the future.
 <!-- <p> Test Code </p> -->
 
-June 29, 2022:
+June 29, 2023:
+
+HTML Tables
+Create a table with an index.html
+<table>
+
+</table>
+
+Table rows, columns, and cells that will hold data. The table row element: <tr>
+<table>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+</table>
+
+Table Data
+Rows aren't sufficient to add data to a table. Each cell element must also be defined. The table data element: <td>
+<table>
+    <tr>
+        <td>23</td>
+        <td>35</td>
+    </tr>
+</table>
+By adding two data points, we created two cells of data.
+
+Table Headings
+Most of the time, table data doesn't make much sense without titles to describe what the data represents. The table heading element: <th>
+<table>
+    <tr>
+        <th></th>
+        <th scope="col">Saturday</th>
+        <th scope="col">Sunday</th>
+    </tr>
+    <tr>
+        <th scope="row">Temperature</th>
+        <td>23</td>
+        <td>35</td>
+    </tr>
+</table>
+*The use of the scope attribute, which can take one of two values:
+1. row = this value makes it clear that the heading is for a row.
+2. col = this value makes it clear that the heading is for a column.
+
+Table Borders
+In older versions of HTML, a border could be added to a table using the border attribute and setting it equal to an integer.  
+The browser will likely still interpret your code correctly if you use the border attribute, but that doesn't mean the attribute should be used. 
+*We use CSS to add style to HTML documents, because it helps us to separate the structure of a page from how it looks. You can achieve the same table border effect using CSS.
+example below uses CSS instead of HTML to show table borders.
+table, td {
+    border: 1px solid black;
+}
+<table border="1">
+    <tr>
+        <td>23</td>
+        <td>35</td>
+    </tr>
+</table>
+
+Spanning Columns 
+Data can span columns using the colspan attribute. The attribute accepts an integer (greater than or equal to 1) to denote the number of columns it spans across.
+<table>
+    <tr>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+    </tr>
+    <tr>
+        <td colspan="2">Out of Town</td>
+        <td>Bakc in Town</td>
+    </tr>
+</table>
+The data "Out of Town" spans the "Monday" and "Tuesday" table headings using the value "2" (two columns). The data "Back in Town" appear only under the "wednesday" heading.
+
+Spanning Rows
+Data can also span multiple rows using the rowspan attribute.
+THe rowspan attribute is used for data that spans multiple rows to denote the number of rows it spans across.
+<table>
+    <tr> <!-- Row 1 -->
+        <th></th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr> <!-- Row 2 -->
+        <th>Morning</th>
+        <td rowspan="2">Work</td>
+        <td rowspan="3">Relax</td>
+    </tr>
+    <tr> <!-- Row 3 -->
+        <th>Afternoon</th>
+    </tr>
+    <tr> <!-- Row 4 -->
+        <th>Evening</th>
+        <td>Dinner</td>
+    </tr>
+</table>
+There are four rows:
+1. The first row contains an empty cell and the two column headings.
+2. The second row contains the "Morning" row heading, along with "Work", which spans two rows under the "Saturday" column. The "Relax" entry spans three rows under the "Sunday" column.
+3. The third row only contains the "Afternoon" row heading.
+4. The fourth row only contains the "Dinner" entry, since "Relax" spans into the cell next to it.
+
+Table Body
+Over time, a table can grow to contain a lot of data and become very long. When this happens, the table can be sectioned off so that it is easier to manage.
+The table body element: <tbody>. It should contain all of the table's data, excluding the table headings.
+<table>
+  <tbody>
+    <tr>
+      <th></th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <tr>
+      <th>Morning</th>
+      <td rowspan="2">Work</td>
+      <td rowspan="3">Relax</td>
+    </tr>
+    <tr>
+     <th>Afternoon</th>
+    </tr>
+    <tr>
+      <th>Evening</th>
+      <td>Dinner</td>
+    </tr>
+  </tbody>
+</table>
+
+Table Head
+The table's headings were kept inside of the table's body. When table's body is sectioned off, however, it also makes sense to section off the table's column headings using the <thead> element (table head element).
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th scope="col">Saturday</th>
+      <th scope="col">Sunday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Morning</th>
+      <td rowspan="2">Work</td>
+      <td rowspan="3">Relax</td>
+    </tr>
+    <tr>
+     <th scope="row">Afternoon</th>
+    </tr>
+    <tr>
+      <th scope="row">Evening</th>
+      <td>Dinner</td>
+    </tr>
+  </tbody>
+</table>
+Only the column headings go under the <thead> element. We can use the scope attribute on <th> elements to indicate whether a <th> element is being used as a "row" heading or a "col" heading.
+
+Table Footer
+The bottom part of a long table can also be sectioned off using the <tfoot> element.
+<table>
+  <thead>
+    <tr>
+      <th>Quarter</th>
+      <th>Revenue</th>
+      <th>Costs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Q1</th>
+      <td>$10M</td>
+      <td>$7.5M</td>
+    </tr>
+    <tr>
+      <th>Q2</th>
+      <td>$12M</td>
+      <td>$5M</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th>Total</th>
+      <td>$22M</td>
+      <td>$12.5M</td>
+    </tr>
+  </tfoot>
+</table>
+Footers are oftain used to contain sums, differences, and other data results.
+
+Styling with CSS
+Tables, by default, are very bland. They have no personality and the typeface is the same type used for other HTML elements.
+C.S.S. stands for Cascading Style Sheets, is a language that web developers use to style the HTML content on a web page. You can use CSS to style tables. 
+table, th, td {
+  border: 1px solid black;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+June 30, 2023:
+
+
+
+
 
 
 
