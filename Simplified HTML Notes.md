@@ -439,6 +439,28 @@ OR:
     <input type="text" name="username" id="username">
 </form>
 
+Password Inputs
+An <input type="password:"> element will replace input text with another character like an asterisk (*) or a dot (.).
+<form>
+    <label for="user-password">Password:</label>
+    <input type="password" id="user-password" name="user-password">
+</form>
+
+Number Inputs
+<form>
+    <label for="years"> Year of Experience:</label>
+    <input id="years" name="years" type="number" step="1">
+</form>
+By setting type="number" for an <input> we can restrict what users type into the input field to just numbers (and a few special characters like -, +, &, ~) We can also provide a step attribute which creates arrows inside the input field to increase or decrease by the value of the step attribute.
+
+Range Input
+Using an <input type="number"> is great if we want to allow users to type in any number of their choosing. If we wanted to limit what number our users could type we might consider using a different type value. Another option is setting type to "range" which creates a slide. 
+<form>
+    <label for="volume">Volume Control</label>
+    <input id="volume" name="volume" type="range" min="0" max="100" step="1">
+</form>
+
+
 
 
 
