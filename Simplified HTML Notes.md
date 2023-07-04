@@ -415,6 +415,32 @@ We created the skeleton for a <form> that will send information to "example.html
     <p>Looks like you want to learn how to create an HTML form. Well, the best way to learn is to play around with it</p>
 </form>
 
+Text Inputs 
+The <input> element has a  type attribute which determines how it renders on the web page and what kind of data it can accept.
+*The default value of type is "text". Its also important that we include a "name" attribute for the <input> -- without the name attribute, the information in the <input> won't be sent when <form> is submitted. 
+<form action="/example.html" method="POST">
+    <input type="text" name="first-text-field">
+</form>
+We can also assign a default value for the value attribute so that users have a pre-filled text field when they first see the rendered form:
+<form action="/example.html" method="POST">
+    <input type="text" name="first-text-field" value="already pre-filled">
+</form>
+
+Adding Labels
+For users to properly identify an <input> we use the appropriately name <label> element. To associate a <label> and an <input>, the <input> needed an id attribute.
+<form action="/example.html" method="POST">
+    <label for="meal">What do you want to eat?</label>
+    <br>
+    <input type="text" name="food" id="meal">
+</form> 
+OR:
+<form action="/example.html" method="POST">
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
+</form>
+
+
+
 
 
 
