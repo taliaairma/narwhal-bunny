@@ -399,7 +399,22 @@ table, th, td {
   text-align: center;
 }
 
-June 30, 2023:
+July 4, 2023: 
+HTML Forms
+
+The form elements is a great tool for collecting information. 
+<form action="/example.html" method="POST">
+</form>
+We created the skeleton for a <form> that will send information to "example.html" as a POST request:
+- The action attribute determines where the information is sent.
+- The Method attribut is assidned a HTTP verb that is incleded in the HTTP reuest.
+*HTTP verbs like POST do not need to be capitalized for the request to work, but its done so out of convertion. As for the example above, we could have written (method="POST") and it would still work.
+*The form element also contains child elements. For instance, it would be helpful to provide a header so that users know what this <form> is about. We also add a paragraph to provide even more detail.
+<form action="/example.html" method="POST">
+    <h1>Creating a form</h1>
+    <p>Looks like you want to learn how to create an HTML form. Well, the best way to learn is to play around with it</p>
+</form>
+
 
 
 
