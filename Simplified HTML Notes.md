@@ -460,6 +460,21 @@ Using an <input type="number"> is great if we want to allow users to type in any
     <input id="volume" name="volume" type="range" min="0" max="100" step="1">
 </form>
 
+Checkbox Input 
+In a form we can use the <input> element and set type="checkbox".
+<form>
+    <p>Choose your pizza toppings:</p>
+    <label for="cheese">Extra Cheese</label>
+    <input id="cheesE" name="topping" type="checkbox" value="cheese">
+    <br>
+    <label for="pepperoni">Pepperoni</label>
+    <input id="pepperoni" name="topping" type="checkbox" value="pepperoni">
+</form>
+
+Note in the example above:
+- There are assigned values to the value attribute of the checkboxes. These values are not visible on the ofrm itself, that's why it is important that we used an associate <label> to identify the checkbox.
+- each <input> has the same value for the name attribute using the same name for each checkbox groups the <input>s together. However, each <input> has a unique id to pair with a <label>.
+
 
 
 
