@@ -499,6 +499,31 @@ Although, radio buttons are great. You can give your users the option to have dr
     </select>
 </form>
 
+Datalist Input
+Even if we have an organized dropdown list, if the list has a lot of options, it could be tedious for the users to scroll through the entire list to locate one option. The <datalist> is used with an <input type="text"> element. The <input> createes a text field that users can type into an filter options from the <datalist>.
+<form>
+    <label for="city">Ideal city to visit></label>
+    <input type="Text" list="cities" id="city" name="city">
+    <datalist id="cities">
+        <option value="New York City"></option>
+        <option value="Tokyo"></option>
+        <option value="Barcelona"></option>
+        <option value="Mexico City"></option>
+        <option value="Melbourne"></option>
+        <option value="other"></option>
+    </datalist>
+</form>
+*In the code above, we have an <input> that has a list attribute. The <input> is associated to the datalist via the <input>'s <datalist>.
+
+Textarea Element
+An <input> element with type="text" creates a single row input field for users to type in information. The textarea element is used to create a bigger text field for users to write more text. We can add the attributes rows & cols to determine the amount of rows and columns for the textarea.
+<form>
+    <label for="blog">New Blog Post:</label>
+    <br>
+    <textarea id="blog" name="blog" rows="5" cols="30">
+    </textarea>
+</form>
+
 
 
 
