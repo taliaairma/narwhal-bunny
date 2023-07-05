@@ -524,6 +524,13 @@ An <input> element with type="text" creates a single row input field for users t
     </textarea>
 </form>
 
+Submit Forms
+To make a submit buttom in a <form>, we're going to use the reliable <input> element and set the type to submit.
+<form>
+    <input type="submit" value="send">
+</form>
+
+Form Validation
 
 
 
