@@ -476,6 +476,29 @@ Note in the example above:
 - each <input> has the same value for the name attribute using the same name for each checkbox groups the <input>s together. However, each <input> has a unique id to pair with a <label>.
 
 July 5, 2022: 
+Radio button Input
+<form>
+    <p>What is sum of 1+1?</p>
+    <input type="radio" id="two" name="answer" value="2">
+    <label for="two">2</label>
+    <br>
+    <input type="radio" id="eleven" name="answer" value="11">
+    <label for="eleven">11</label>
+</form>
+
+Dropdown List
+Although, radio buttons are great. You can give your users the option to have dropdown lists (as well you have a lot of options) An alternative solution to a dropdown list is to allow users to choose one option from an organized list.
+<form>
+    <label for="lunch">What's for lunch?</label>
+    <select id="lunch" name="lunch">
+        <option value="pizza">Pizza</option>
+        <option value="curry">Curry</option>
+        <option value="salad">Salad</option>
+        <option value="ramen">Ramen</option>
+        <option value="tacos">Tacos</option>
+    </select>
+</form>
+
 
 
 
