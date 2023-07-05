@@ -571,6 +571,33 @@ Regular expressions are a sequence of characters that make up a search pattern. 
 </form>
 With the pattern in place, users can't submit the <form> with a number that doesnt follow the regex.
 
+Semantic HTML 
+
+Header and Nav
+A <header> is a container usually for either navigational links or introductory content catining <h1> to <h6> headings.
+<header>
+    <h1>
+        Everything you need to know about dogs!
+    </h1>
+</header>
+This can be compared to the code below which uses a <div> tag instead of a <header> tag:
+<div id="header">
+    <h1>
+        Everything you need to know about dogs!
+    </h1>
+</div>
+By using a <header> tag, our code becomes easier to read. It is much easier to identify what is inside of the <h1>'s parent tags, as opposed to a <div> tag which would provide no details as to what was inside of the tag.
+A <nav> is used to defina a block of navigation links such as menus and tables of contents. It is important to note that <nav> can be used inside of the <header> element but can also be used on its own.
+<header> 
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>      
+    </ul>
+  </nav>
+</header>
+By using <nav> as a way to label our navigation links, it will be easier for not only us, but also for web browsers and screen readers to read the code.
+
 
 
 
