@@ -561,6 +561,16 @@ To set a minimum number of characters for a text field, we add the minlength att
     <input type="submit" value="Submit">
 </form>
 
+Matching a Pattern
+Regular expressions are a sequence of characters that make up a search pattern. If the input matches the regex, the form can be submitted. For cases when we want user input to follow specific guidelines, we us the pattern attribute and assign it a regular expressions or a regex.
+<form action="/example.html" method="POST">
+  <label for="payment">Credit Card Number (no spaces):</label>
+  <br>
+  <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+  <input type="submit" value="Submit">
+</form>
+With the pattern in place, users can't submit the <form> with a number that doesnt follow the regex.
+
 
 
 
