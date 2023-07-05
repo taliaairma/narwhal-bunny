@@ -598,6 +598,32 @@ A <nav> is used to defina a block of navigation links such as menus and tables o
 </header>
 By using <nav> as a way to label our navigation links, it will be easier for not only us, but also for web browsers and screen readers to read the code.
 
+Main and Footer
+Two more structual elements are <main> and <footer>. These elements along with <nav> and <header> help describe where an element is located based on conventional web development standards .
+THe element <main> is used to encapsulate the dominant content witin a webpage. This tag is separate from the <footer> and the <nav> of a web page since these elements don't contain the principal content. By using <main> as opposed to a <div> element, screen readers and web browsers are better able to identify that whatever is inside of the tag is the bulk of the content.
+<main>
+  <header>
+    <h1>Types of Sports</h1>
+  </header>
+  <article>
+    <h3>Baseball</h3>
+    <p>
+      The first game of baseball was played in Cooperstown, New York in the summer of 1839.
+    </p>
+  </article>
+</main>
+The content at the botttom of the subject information is known as the footer, indicated by the <footer> element. The footer contains information such as:
+- Contact information
+- Copyright information
+- Terms of use 
+- Site Map
+- Reference to top of page links
+<footer>
+  <p>Email me at abcdef@yahoo.com</p>
+</footer>
+In the example above, the footer is used to contian contact information. The <footer> tag is separate from the <main> element and typically located at the bottom of the content.
+
+
 
 
 
