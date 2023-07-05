@@ -532,6 +532,38 @@ To make a submit buttom in a <form>, we're going to use the reliable <input> ele
 
 Form Validation
 
+Requiring an Input 
+Sometimes we have fields in our <form>s which are not optional, i.e. there must be information provided before we can submit it. To enforce this rule, we can add the reuiqred attribute to an <input> element.
+<form action="/example.html" method="POST">
+    <label for="allergies">Do you have any dietaary restrictions?</label>
+    <br>
+    <input id="allergies" name="allergies" type="texT" required>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+The styling of the message varies from browser to browser. 
+
+Set a Minimum and Maximum
+Another built-in validation we can use is to assign a minimum or maximum value for a number field, <input type="number"> and <input type="range">. To set a minimum acceptable value, we use the min attribute and assign a value. On the other side, to set a maximum acceptable value, we assign the max attribute a value.
+<form action="/example.html" method="POST">
+    <label for="guests">Enter # of guests:</label>
+    <input id="guests" name="guests" type="number" min="1" max="4">
+    <input type="submit" value="Submit">
+</form>
+*If a user tries to submit an input that is less than 1 a warning will appear; a similar message will appear if a user tries to input a number greater than 4.
+
+Checking Text Length
+There are certainly cases where we wouldn’t want our users typing more than a certain number of characters (think about the character cap for messages on Twitter). We might even want to set a minimum number of characters. Conveniently, there are built-in HTML5 validations for these situations.
+To set a minimum number of characters for a text field, we add the minlength attribute and a value to set a minimum value. 
+<form action="/example.html" method="POST">
+    <label for="summary">Summarize your feelings in less than 250 characters</label>
+    <input id="summary" name="summary" type="text" minlength="5" maxlength="250" required>
+    <input type="submit" value="Submit">
+</form>
+
+
+
+
 
 
 
