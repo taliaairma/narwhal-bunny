@@ -475,6 +475,7 @@ Note in the example above:
 - There are assigned values to the value attribute of the checkboxes. These values are not visible on the ofrm itself, that's why it is important that we used an associate <label> to identify the checkbox.
 - each <input> has the same value for the name attribute using the same name for each checkbox groups the <input>s together. However, each <input> has a unique id to pair with a <label>.
 
+July 5, 2022: 
 
 
 
