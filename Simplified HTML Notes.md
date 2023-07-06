@@ -660,6 +660,17 @@ The <aside> element is used to mark additional information that can enhance anot
 </aside>
 
 Figure and Figcaption
+<figure> is an element used to encapsulate media such as an image, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document.
+<figure>
+    <img src="overwatch.jpg">
+</figure>
+
+<figcaption> is an element used to describe the media in the <figure> tag. Usually, <figcaption> will go inside <figure>. This is different than using a <p> element to describe the content; if we decide to change the location of <figure>, the paragraph tag may get displaced from the figure while a <figcaption> will move with the figure. This is useful for grouping an image with a caption.
+<figure>
+  <img src="overwatch.jpg">
+  <figcaption>This picture shows characters from Overwatch.</figcaption>
+</figure>
+
 
 
 
