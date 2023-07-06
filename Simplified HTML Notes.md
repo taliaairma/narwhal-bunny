@@ -671,6 +671,20 @@ Figure and Figcaption
   <figcaption>This picture shows characters from Overwatch.</figcaption>
 </figure>
 
+Audio & Attributes
+The <audio> element is used to embed audio content into a document. Like <video>, <audio> uses src to link the audio source.
+<audio>
+    <source src="iAmAnAudioFile.mp3" type="audio/mp3">
+</audio>
+
+We linked our audio file into the browser but now we need to give it controls. This is where attributes come in. Attributes provide additional information about an element.
+
+Attributes allow us to do many different things to our audio file. There are many attributes for <audio> but today we’re going to be focusing on controls and src.
+
+- controls: automatically displays the audio controls into the browser such as play and mute.
+
+- src: specifies the URL of the audio file.
+<audio autoplay controls>
 
 
 
