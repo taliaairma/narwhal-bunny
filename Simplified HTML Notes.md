@@ -686,6 +686,19 @@ Attributes allow us to do many different things to our audio file. There are man
 - src: specifies the URL of the audio file.
 <audio autoplay controls>
 
+Video & Embed
+The <video> element makes it clear that a developer is attempting to display a video to the user.
+
+Some attributes that can alter a video playback include:
+- controls: When added in, a play/pause button will be added onto the video along with volume control and a fullscreen option.
+- autoplay: The attribute which results in a video automatically playing as soon as the page is loaded.
+- loop: This attribute results in the video continuously playing on repeat.
+<video src="coding.mp4" controls>Video not supported</video>
+
+Another tag that can be used to incorporate media content into a page is the <embed> tag, which can embed any media content including videos, audio files, and gifs from an external source. This means that websites that have an embed button have some form of media content that can be added to other websites. The <embed> tag is a self-closing tag, unlike the <video> element. Note that <embed> is a deprecated tag and other alternatives, such as <video>, <audio> and <img>, should be used in its place, but is being taught for legacy purposes.
+<embed src="download.gif"/>
+
+
 
 
 
