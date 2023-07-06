@@ -623,6 +623,44 @@ The content at the botttom of the subject information is known as the footer, in
 </footer>
 In the example above, the footer is used to contian contact information. The <footer> tag is separate from the <main> element and typically located at the bottom of the content.
 
+July 6th 2022: 
+Article & Section 
+
+<section> defines elements in a document, such as chapters, headings, or any other area of the document with the same theme. For example, content with the same theme such as articles about cricket can go under a single <section>. A website’s home page could be split into sections for the introduction, news items, and contact information. 
+<section>
+    <h2>Fun Facts About Dogs</h2>
+</section>
+
+The <article> element holds content that makes sense on its own. <article> can hold content such as articles, blogs, comments, magazines, etc. An <article> tag would help someone using a screen reader understand where the article content (that might contain a combination of text, images, audio, etc.) begins and ends.
+<section>
+    <h2>Fun Facts About Dogs</h2>
+    <article>
+        <p>A Dog's fart can empty a room.</p>
+    </article>
+</section>
+
+The Aside Element
+
+The <aside> element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. This element can be used alongside other elements such as <article> or <section>. Some common uses of the <aside> element are for:
+
+- Bibliographies
+- Endnotes
+- Comments
+- Pull quotes
+- Editorial sidebars
+- Additional information
+
+<article>
+    <p>The first World Series was played between Pittsburgh and Bostion in 1903 and was a nine-game series.</p>
+</article>
+<aside>
+    <p>
+    Babe Ruth once sated, "Heroes get remembered, but legend never die."
+    </p>
+</aside>
+
+
+
 
 
 
