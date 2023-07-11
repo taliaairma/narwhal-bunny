@@ -74,3 +74,5 @@ The CSS code in the example above changes the color of all paragraph text to red
 External Stylesheet
 With an external stylesheet, you can write all the CSS code needed to style a page without sacrificing the readability and maintainability of your HTML file.
 
+July 12, 2023:
+Visual Rules
