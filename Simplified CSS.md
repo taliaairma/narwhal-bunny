@@ -4,6 +4,22 @@ Intro to CSS
 To link your HTML file to a CSS file:
 <link href="style.css" rel="stylesheet">
 
+When HTML and CSS codes are in separate files, the files must be linked. Otherwise, the HTML file won't be able to locate the CSS code. and the styling will not be applied.
+
+You can use the <link> element to link HTML and CSS files together. The <link> element must be placed within the head of the HTML file. It is a self-closing tag and requires the following attributes:
+- href: The anchor element, the valur of this attribute must be the address, or path, to the CSS file.
+- rel: This attribute describes the relationship between the HTML file and CSS file. Because you are linking to a stylesheet, the value should be set to stylesheet.
+
+When linking an HTML File and a CSS file together, the <link> element will look like the following:
+To link your HTML file to a CSS file:
+<link href="style.css" rel="stylesheet">
+<link href='https://www.codecademy.com/stylesheets/style.css' rel='stylesheet'>
+Specifying the path to the stylesheet using a URL is one way of linking a stylesheet.
+
+If the CSS file is stored in the same directory as your HTML file, then you can specify a relative path instead of a URL, like so:
+<link href='./style.css' rel='stylesheet'>
+
+
 CSS Anatomy
 
 Declaration are the core of CSS. They apply a style to the selected element. The <p> element has been selected in both syntaces and will be styled to display the text in blue. 
@@ -57,5 +73,4 @@ The CSS code in the example above changes the color of all paragraph text to red
 
 External Stylesheet
 With an external stylesheet, you can write all the CSS code needed to style a page without sacrificing the readability and maintainability of your HTML file.
-
 
