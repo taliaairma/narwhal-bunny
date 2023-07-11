@@ -34,3 +34,28 @@ If you'dl ike to add more than one style with inline styles, simply keep adding 
 
 *It's important to know that inline styles are a quick way of directly styling an HTML element, but are rarely used when creaing websites.
 
+Internal Stylesheet
+
+HTML allows you to write CSS code in its own dedicated section with a <style> element nested inside of the <head> element. The CSS code inside the <style> element is often referred to as an internal stylesheet.
+
+An internal stylesheet has certain benefits and use cases over inline styles, but once again, it's not best practice. Understanding how to use internal stylesheets is nonetheless helpful knowledge to have.
+
+<head>
+    <style>
+        </style>
+</head>
+After adding the opening and closing <style> tags in the head section, you can begin writing CSS code.
+<head>
+    <style>
+        p {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+The CSS code in the example above changes the color of all paragraph text to red and also changes the size of the text to 20 pixels. *How the syntax of the CSS code matched (for the most part) the syntax you used fro inline styling. THe main difference is that you can specify which elements to apply the styling.
+
+External Stylesheet
+With an external stylesheet, you can write all the CSS code needed to style a page without sacrificing the readability and maintainability of your HTML file.
+
+
