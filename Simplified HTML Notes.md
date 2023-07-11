@@ -698,8 +698,7 @@ Some attributes that can alter a video playback include:
 Another tag that can be used to incorporate media content into a page is the <embed> tag, which can embed any media content including videos, audio files, and gifs from an external source. This means that websites that have an embed button have some form of media content that can be added to other websites. The <embed> tag is a self-closing tag, unlike the <video> element. Note that <embed> is a deprecated tag and other alternatives, such as <video>, <audio> and <img>, should be used in its place, but is being taught for legacy purposes.
 <embed src="download.gif"/>
 
-July 11, 2023: 
-Intro to CSS
+
 
 
 
