@@ -192,5 +192,43 @@ p {
 
 Pixels allow you to set the exact size of an element's box (width and height). When the width and height of an element are set in pixels, it will be the same size on all devices - an element that fills a laptop screen will overflow a mobile screen. 
 
+Borders
+A border is a line that surrounds an element, like a frame around a painting. Borders can be set with a specific width, style and color: 
+- width: The thickness of the border. A border's thickness can be set in pixels or with one of the following keywords: thin, medium, or thick. 
+- style: The design of the border. Web browsers can render any of 10 different styles. Some of these styles include: none, dotted, and solid.
+- color: The color of the border. Web browsers can render colors using a few different formats, including 140 built-in color keywords.
+
+p {
+    border: 3px solid coral;
+}
+
+The default border is medium none color, where color is the current color of the element. If width, style, or color are not set in the CSS file, the web browser assigns the default value for that property. 
+
+p.content-header {
+    height: 80px;
+    width: 240px;
+    border: solid coral;
+}
+
+Border Radius
+
+Because of CSS, not all border have to remain as a square. You can modify the corners of an element's border box with the border-radius property. 
+
+div.container {
+    border: 3px solid blue;
+    border-radius: 5px;
+}
+
+You cna create a border that is a perfect circle by first creating an element with the same width and height, and then setting the radius equal to half the width of the box, which is 50%.
+
+div.container {
+    height: 80px;
+    width: 240px;
+    border: 3px solid blue;
+    border-radius: 50%;
+}
+
+The code in the example above creates a <div> that is a prefect circle. 
+
 
 
