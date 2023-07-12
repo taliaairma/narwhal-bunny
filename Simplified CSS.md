@@ -76,3 +76,30 @@ With an external stylesheet, you can write all the CSS code needed to style a pa
 
 July 12, 2023:
 Visual Rules
+
+Font Family
+
+The property to change the typeface of text on your web page, font-family.
+
+h1 {
+    font-family: Garamond;
+}
+
+When setting typefaces on web page, keep the following points in mind: 
+- The font specified must be installed on the user's computer or downloaded with the site.
+- Web safe fonts are a group of fonts supported across most browsers and operating systems.
+- Unless you are using web safe fonts, the font you choose may not appear the same between all browsers and operating systems.
+- When the name of a typeface consists of more than one word, it's a best practice to enclose the typeface's name in quotes, like so:
+h1 {
+    font-family: 'Courier New';
+}
+
+Font Size
+
+The property to change the size of text on your web page, font-size.
+p {
+    font-size: 18px;
+}
+
+The font-szie of all paragraphs was set to 18px. px means pixels, which is one way to measure font size. 
+
