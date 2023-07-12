@@ -174,3 +174,14 @@ Since !important is used on the p selector's color attribute, all p elements wil
 
 One justification for using !important is when working with multiple stylesheets. 
 
+The Box Model
+
+Box Model comprises the set of properties that define parts of an element that take up space on a web page. The model includes the content area's size (width and height) and the element's padding, border, and margin. Properties include: 
+- width & height: The width and height of the content area.
+- padding: The amount of space between the content area and the border.
+- border: The thickness and style of the border and the outside edge of the element. 
+
+<img src="https://content.codecademy.com/courses/updated_images/diagram-boxmodel_Updated_1-01.svg" alt="The Box Model">
+
+
+
