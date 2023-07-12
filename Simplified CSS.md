@@ -125,3 +125,37 @@ The text-align property can be set to one of the following commonly used values:
 - right
 - justify: spaces out text in order to align with the right and left side of the parent element.
 
+Color and Background Color
+Color can affect the following desgin aspects: 
+- Foreground Color
+- Background Color
+Foreground color is the color that an element appears in.
+
+Two design aspects can be styled with the following two properties: 
+- color: foreground color
+- background-color
+h1 {
+    color: red;
+    background-color: blue;
+}
+
+Opacity
+Opacity is the measure of how transparent an element is. It's measured from 0 to 1, with 1 representing 100$, or fully visible and opaque, and 0 representing 0%, or fully invisible.
+
+Opacity can be used to make elements fade into others from a nice overlay effect.
+.overlay {
+    opacity: 0.5;
+}
+
+Background Image
+One options to make the background of an element an image. Is done through the CSS property, background-image.
+.main-banner {
+    background-image: url('https://www.1234.com/image.jpg')
+}
+
+1. The background-image property will set the element's background to display an image.
+2. The value provided to background-image is a url. The url should be a url to an image. The url can be a file within your project, or it can be link to an external site. To linke to an image inside an existing project, you must provide a relative file path. If there was an image folder in the project, with an image named mountains.jpg, the relative file path would like:
+.main-banner{
+    bacground-image: url('images/mountains.jpg')
+}
+
