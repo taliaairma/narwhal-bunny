@@ -103,3 +103,12 @@ p {
 
 The font-szie of all paragraphs was set to 18px. px means pixels, which is one way to measure font size. 
 
+Font Weight
+
+The font-weight property controls how bold or thin text appears. 
+p {
+    font-weight: bold;
+}
+
+The font-weight property has another value: normal. 
+
