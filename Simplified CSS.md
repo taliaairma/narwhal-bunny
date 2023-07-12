@@ -112,3 +112,16 @@ p {
 
 The font-weight property has another value: normal. 
 
+Text Align
+
+The property to align text is text-align. The property will align text to the element that holds it, otherwise known as its parent.
+h1 {
+    text-align: right;
+}
+
+The text-align property can be set to one of the following commonly used values:
+- left: aligns text to the left side of its parent element.
+- center
+- right
+- justify: spaces out text in order to align with the right and left side of the parent element.
+
