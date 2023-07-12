@@ -183,5 +183,14 @@ Box Model comprises the set of properties that define parts of an element that t
 
 <img src="https://content.codecademy.com/courses/updated_images/diagram-boxmodel_Updated_1-01.svg" alt="The Box Model">
 
+Height and Width
+The CSS height and width properties can be used to modify these default dimensions.
+p {
+    height: 80px;
+    width: 240px;
+}
+
+Pixels allow you to set the exact size of an element's box (width and height). When the width and height of an element are set in pixels, it will be the same size on all devices - an element that fills a laptop screen will overflow a mobile screen. 
+
 
 
