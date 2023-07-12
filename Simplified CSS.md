@@ -159,3 +159,18 @@ One options to make the background of an element an image. Is done through the C
     bacground-image: url('images/mountains.jpg')
 }
 
+Important
+!important can be applied to specific declarations, instead of full rules. It will override any style no matter how specific it is. As a result, it should almost never be used. Once !important is used, it is very hard to override. 
+
+p {
+    color: blue !important;
+}
+
+.main p {
+    color: red;
+}
+
+Since !important is used on the p selector's color attribute, all p elements will appear blue, even though there is a more specific .main p selector that sets the color attribute to red.
+
+One justification for using !important is when working with multiple stylesheets. 
+
