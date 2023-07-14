@@ -357,4 +357,25 @@ It may be helpful to think of collapsing vertical margins as a short person tryi
 
 <img src="https://content.codecademy.com/courses/updated_images/diagram-verticalmargins_Updated_1-01.svg" alt="Vertical Margins Collapse">
 
+Minimum and Maximum Height and Width
+Because a web page can be viewed through displays of differing screen size, the content on the web page can suffer from those changes in size. To avoid this problem, CSS offers two properties that can limit how narrow or how wide an element's box can be sized to: 
+- min-width: Ensures a minimum width of an element's box.
+- max-width: Ensures a maximum width of an element's box.
 
+p {
+    min-width: 300px;
+    max-width: 600px;
+}
+
+Content, like text can become difficult to read which a browser window is narrowed or expanded. These two properties ensure that content is legible by limiting the minimum and maximum widths of an element. 
+
+You can also limit the minimum and maximum height of an element: 
+- min-height: Ensures a minimum height for an element's box.
+- max-height: Ensures a maximum height for an element's box. 
+
+p {
+    min-height: 150px;
+    max-height: 300px;
+}
+
+M
