@@ -231,4 +231,50 @@ div.container {
 The code in the example above creates a <div> that is a prefect circle. 
 
 
+July 14, 2023: 
+Padding 
+
+Padding is like the space between a picture and the frame surrounding it. 
+
+p.content-header {
+    border: 3px solid coral;
+    padding: 10px;
+}
+
+The padding property is often used to expand the background color and make the content look less cramped. 
+If you want to be more specific about the amount of padding on each side of a box's content, you can use the following properties: 
+- padding-top
+- padding-bottom 
+- padding-right
+- padding-left
+
+p.content-header {
+    border: 3px solid fuschia;
+    padding-bottom: 10px;
+}
+
+Padding Shorthand
+
+Another implementation of padding lets you specify exactly how much padding there should be on each side of the content in a single declaration. A declaration that uses multiple properties as values is known as a shorthand property. 
+Padding shorthand lets you specify all padding properties as values on a single line: 
+- padding-top
+- padding-bottom 
+- padding-right
+- padding-left
+
+- 4 Values
+p.content-header {
+    padding: 6px 11px 4px 9px;
+}
+
+- 3 Values
+p.content-header {
+    padding: 5px 10px 20px;
+}
+
+- 2 Values
+p.content-header {
+    padding: 5px 10px;
+}
+
 
