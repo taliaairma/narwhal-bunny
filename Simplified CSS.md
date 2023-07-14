@@ -277,4 +277,46 @@ p.content-header {
     padding: 5px 10px;
 }
 
+Margin 
+Margin refers to the space directly outsie of the box. The margin property is used to specify the size of this space.
+p {
+    border: 1px solid aquamarine;
+    margin: 20px;
+}
+
+If you want to be more specific about the amount of margin on each size of a box, you can use the following properties:
+- margin-top
+- margin-right
+- margin-bottom
+- margin-left
+
+Each properry affects the margin on only one side of the box, providing more flexibility in customization. 
+
+p {
+    border: 3px solid DarkSlateGrey;
+    margin-right: 15px;
+}
+
+Margin Shorthand 
+Similar to padding shorthand, margin shortand lets you specify all of the margin properties as values on a single line:
+- margin-top
+- margin-right
+- margin-bottom
+- margin-left
+
+- 4 Values
+p {
+    margin: 6px 10px 5px 12px;
+}
+
+- 3 Values
+p {
+    margin: 5px 12px 4px;
+}
+
+- 2 Values
+p {
+    margin: 20px 10px;
+}
+
 
