@@ -409,3 +409,21 @@ User agent stylesheets often have default CSS rules that set default values for 
     padding: 0;
 }
 
+Visibility
+The visibility property can be set to one of the following values: 
+- hidden: hides an element.
+- visible: displays an element.
+- collapse: collapses an element.
+
+<ul>
+    <li>Explore</li>
+    <li>Connect</li>
+    <li class="future">Donate</li>
+</ul>
+
+.future {
+    visibility: hidden;
+}
+
+Keep in mind, however, that users can still view the contents of the list item by viewing the source code in their browser. Furthermore, the web page will only hide the contents of the element. It will still leave an empty space where the element is intended to display. 
+
