@@ -319,4 +319,42 @@ p {
     margin: 20px 10px;
 }
 
+Auto 
+The margin property also lets you center content. * Must following a few syntax requirements.
+
+div.headline {
+    width: 400px;
+    margin: 0 auto;
+}
+
+margin: 0 auto; will center the divs in their containing elements. The 0 sets the top and bottom margins to 0 pixels. The auto value instructs the browser to adjust the left and right margins until the element is centered within its containing element.
+In order to center an element, a width must be set for that element. Otherwise, the width of the div will be automatically set to the full width of its containing element, like the <body>, for example. It's not possible to center an element that takes up the full width of the page, since the width of the page can change due to display and/or browser window size.
+
+Margin Collapse
+Padding is space added inside an element's border, while margin is space added outside an element's border. One additional difference is that top and bottom margins, also called vertical margins, collapse, while top and bottom padding does not. 
+
+Horizontal margins (left and right), like padding, are always displayed and added together.
+
+#img-one {
+    margin-right: 20px;
+}
+
+#img-two {
+    margin-left: 20px;
+}
+
+Unlike horizontal margins, vertical margins do not add. Instead, the larger of the two vertical margins sets the distance between adjacent elements. 
+
+#img-one {
+    margin-bottom: 30px;
+}
+
+#img-two {
+    margin=top: 20px;
+}
+
+It may be helpful to think of collapsing vertical margins as a short person trying to push a taller person. The tall person has longer arms can easily push the short arms cannot reach the person with long arms.
+
+<img src="https://content.codecademy.com/courses/updated_images/diagram-verticalmargins_Updated_1-01.svg" alt="Vertical Margins Collapse">
+
 
