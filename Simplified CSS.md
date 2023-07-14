@@ -378,4 +378,34 @@ p {
     max-height: 300px;
 }
 
-M
+Overflow
+All of the componenets of the box model comprise an element's size. For example, an image that has the following dimensions is 364 pixels wide and 244 pixels tall. 
+- 300px wide
+- 200px tall
+- 10px padding on the left and right
+- 10px padding on the top and bottom
+- 2px border on the left and right
+- 2px border on the top and bottom
+- 20px margin on the left and right
+- 10px margin on the top and bottom 
+
+The overflow property controls what happens to content that spills, or overflows, outside its box. The most commonly used values are: 
+- hidden: when set to this value, any content that overflows will be hidden from view.
+- scroll: A scroll bad will be added to the element's box. 
+- visible: The overflow content will be displayed outside of the containing element. 
+
+p {
+    overflow: scroll;
+}
+
+The overflow property is set on a parent element to instruct a web browser on how to render child elements. For example, if a div's overflow property is set to scroll, all children of this div will display overflowing content with a scroll bar. 
+
+Resetting Defaults 
+These default stylesheets are known as user agent stylesheets. In this case, the term user agent is a technical term for the browser. 
+User agent stylesheets often have default CSS rules that set default values for padding and margin. This affects how the browser displays HTML elements, which can make it difficult for a developer to design or style a web page. 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
