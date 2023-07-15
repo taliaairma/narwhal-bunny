@@ -540,4 +540,35 @@ The Sticky value is another position value that keeps an element in the document
     top: 240px;
 }
 
+Z-Index 
+
+When boxes on a web page have a combination of different positions, the boxes (and therefore, their content) can overlap with each other, making the content difficult to read or consume. 
+
+.blue-box {
+    background-color: blue;
+}
+
+.green-box {
+    background-color: green;
+    position: relative;
+    top: -170px;
+    left: 170px;
+}
+
+The z-index property controls how far back or how far forward an element should appear on the web page when elements overlap. THis can be thought of as the depth of elements, with deeper elements appearing behind shallower elements. 
+
+The z-index property accepts integer calues. Depending on their values, the integers instruct the browser on the order in which elements should be layed on the web page. 
+
+.blue-box {
+    background-color: blue;
+    position: relative;
+    z-index: 1;
+}
+
+.green-box {
+    background-color: green;
+    position: relative;
+    top: -170px;
+    left: 170px;
+}
 
