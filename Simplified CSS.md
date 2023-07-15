@@ -516,4 +516,28 @@ Offsetting the relative element will not affect the positioning of other element
 
 Position: Absolute 
 
+Another way of modifying the position of an element is by setting its position to absolute.
+
+When an element's position is set to absolute, all other elements on the page will ignore the element and act like it is not present on the page. The elemeent will be positioned relative to its closest positioned parent element, while offset properties can be used to determine the final position from there. 
+
+Position: Fixed 
+
+We can fix an element to a specific position on the page (regardless of user scrolling) by setting its position to fixed, and accompanying it with the familiar offset properties top, bottom, left, and right. 
+
+.title {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+Position: Sticky
+
+The Sticky value is another position value that keeps an element in the document flow as the user scrolls, but sticks to a specificed position as the page is scrolled further. The is done by using  the sticky value alongg with the familiar offset properties, as well as one new one.
+
+.box-bottom {
+    background-color: darkgreen;
+    position: sticky;
+    top: 240px;
+}
+
 
