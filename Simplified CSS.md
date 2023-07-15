@@ -572,3 +572,49 @@ The z-index property accepts integer calues. Depending on their values, the inte
     left: 170px;
 }
 
+Inline Display 
+
+There are 3 values from the display property: 
+- Inline
+- Block
+- Inline-Block
+
+The default display for some elements, such as <em>, <strong>, and <a> is called inline.
+
+Inline elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content and not requiring a new line after each element. The height and width of these elements cannot be specified in the CSS document.
+Inline elements cannot be altered in size with the height and width CSS properties. 
+
+h1 {
+    display: inline;
+}
+
+Display: Block
+
+Block-level elements, some elements that are not displayed in the same line as the content around them. These elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are height necessary to accommodate their content. 
+
+Elements that are block-level by default inclue all levels of heading elements (<h1> through <h6>), <p>, <div> and <footer>. 
+
+strong {
+    dispaly: block;
+}
+Display: Inline-Block
+
+Inline-block display combines features of both inline and block elements. Inline-block elements can appear next to each other and we can specify their dimensions using the width and height properties. Images are the best examply of default inline-block elements. 
+
+<div class="rectangle">
+  <p>I’m a rectangle!</p>
+</div>
+<div class="rectangle">
+  <p>So am I!</p>
+</div>
+<div class="rectangle">
+  <p>Me three!</p>
+</div>
+
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
+
+
