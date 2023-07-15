@@ -461,3 +461,59 @@ The New Box-Model
 
 The universal selector (*) targets all elements on the web page and sets their box model to the border-box model. 
 
+Display and Positioning
+
+Flow of HTML 
+A browser will render the elements of an HTML document that has no CSS from left to right, top to bottom, in the same order as they exist in the document. This is called the flow of elements in HTML. 
+
+The five properties for adjusting the position of HTML elements in the browser: 
+- position
+- display 
+- z-index
+- float
+- clear
+
+Each of these properties will allow us to position and view elements on a web page. 
+
+Position
+
+Block-level elements like these boxes create a block full width of their parent elements, and they prevent other elements from appearing in the same horizontal space. 
+
+The default position of an element can be changed by setting its position property. The position property can take one of five values:
+- static: the default value
+- relative
+- absolute
+- fixed 
+- sticky
+
+Position: Relative 
+
+One way to modify the default position of an element is by setting its position property to relative. 
+
+The value allows you to position an element relative to its default static position on the web page. 
+
+.green-box {
+    background-color: green;
+    position: relative;
+}
+
+By accompanying the position declaration with one or more of the following offset properties that will move the element away from its default static position: 
+- top
+- right
+- bottom
+- left
+
+You can specify values in pixels, ems, or percentages, among others, to dial in exactly how far you need the element to move. It's also important to note that offset properties will not work if the element's position property is the default static. 
+
+.green-box {
+    background-color: green;
+    position: relative;
+    top: 50px;
+    left: 120px;
+}
+
+Offsetting the relative element will not affect the positioning of other elements.
+
+Position: Absolute 
+
+
