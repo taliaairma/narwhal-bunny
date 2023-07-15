@@ -428,3 +428,36 @@ The visibility property can be set to one of the following values:
 Keep in mind, however, that users can still view the contents of the list item by viewing the source code in their browser. Furthermore, the web page will only hide the contents of the element. It will still leave an empty space where the element is intended to display. 
 
 July 15, 2023: 
+Box-Model: Border-Box
+
+We can reset the entire box model and specify a new one: border-box. 
+
+* {
+    box-sizing: border-box;
+}
+
+In this box model, the height and width of the box will remain fixed. The border thickness and padding will be included inside of the box, which means the overall dimensions of the box do not change. 
+
+<h1>Hello World</h1>
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    border: 1px dashed #4f768e;
+    height: 150px;
+    width: 200px;
+    padding: 20px;
+}
+
+<img src="https://static-assets.codecademy.com/Courses/Learn-CSS/Border-Box/htmlcss1-diagram__borderbox.svg" alt="Width Property">
+
+The New Box-Model
+
+* {
+    box-sizing: border-box;
+}
+
+The universal selector (*) targets all elements on the web page and sets their box model to the border-box model. 
+
