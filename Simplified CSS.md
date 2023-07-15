@@ -617,4 +617,42 @@ Inline-block display combines features of both inline and block elements. Inline
   height: 300px;
 }
 
+Float
+The float property is commonly used for wrapping text around an image. * that moving elements left or right for layout purposes is better suited for tools like CSS grid and flexbox. 
+
+The float property is often set using one of the values below: 
+- left: moves, or floats, elements as far left as possible.
+- right: moves elements as far right as possible. 
+
+.green-section {
+  width: 50%;
+  height: 150px;
+}
+ 
+.orange-section {
+  background-color: orange;
+  width: 50%;
+  float: right;
+}
+
+Floated elements must have a width specified. Otherwise, the element will assume the full width of its containing element and changing the float value will not yield any visible results. 
+
+Clear 
+
+The float property can also be used to float multiple elements at once. However, when multiple floated elements have different heights, it can affect theri layout on the page. Specifically, elements can "bump" into each other and not allow other elements to properly move to the left or right. 
+
+The clear property specifies how elements should behave when they bump into each other on the page. It can take on one of the following rules: 
+- left
+- right
+- both
+- none
+
+div {
+  width: 200px;
+  float: left;
+}
+ 
+div.special {
+  clear: left;
+}
 
