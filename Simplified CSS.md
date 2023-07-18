@@ -687,3 +687,4 @@ aqua:         #00FFFF or #0FF
 
 RGB Colors 
 
+Another syntax for representing RGB values 
