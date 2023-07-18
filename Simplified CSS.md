@@ -741,4 +741,6 @@ There is, however, a named color keyword for zero opacity, transparent. It’s e
 
 color: transparent;
 
+Typography
+
 
