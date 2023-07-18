@@ -686,3 +686,4 @@ aqua:         #00FFFF or #0FF
 *Notice that black, white, and aqua are all represented with both three characters and six characters. This can be done with hex colors whose number pairs are the same characters. In the example above, aqua can be represented as #0FF because both of the first two characters are 0 and the second and third pairs of characters are both Fs. Keep in mind that all three character hex colors can be represented with six characters (by repeating each character twice) but the same is not true in reverse.
 
 RGB Colors 
+
