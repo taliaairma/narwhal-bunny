@@ -1,4 +1,4 @@
-h1 {
+header {
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-size: 96px;
@@ -6,8 +6,8 @@ h1 {
     color: #F5A9F0;
 } 
 
-h2 {
-    color: #F75AF3;
+h1 {
+    color: #202020;
     text-align: center;
     font-size: 48px;
     font-family: 'Satisfy', cursive;
