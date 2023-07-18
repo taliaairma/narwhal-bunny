@@ -719,4 +719,26 @@ Lightness refers to how light or dark the color is. Halfway, or 50%, is normal l
 
 HSL is convenient for adjusting colors. In RGB, making the color a little darker may affect all three color components. In HSL, that’s as easy as changing the lightness value. HSL is also useful for making a set of colors that work well together by selecting various colors that have the same lightness and saturation but different hues.
 
+Opacity and Alpha
+
+To use opacity in the HSL color scheme, use hsla instead of hsl, and four values instead of three. For example:
+
+color: hsla(34, 100%, 50%, 0.1);
+
+The first three values work the same as hsl.
+The fourth value (which we have not seen before) is the alpha. 
+This last value is sometimes called opacity. 
+
+Alpha is a decimal number from zero to one. 
+If alpha is a zero, the color will be completely transparent. 
+If alpha is one, the color will be opaque. The value for half-transparent would be 0.5. 
+
+The RGB color scheme has a similar syntax for opacity, rgba. Again, the first three values work the same as rgb and the last value is the alpha. Here’s an example:
+
+color: rgba(234, 45, 98, 0.33);
+
+There is, however, a named color keyword for zero opacity, transparent. It’s equivalent to rgba(0, 0, 0, 0), and it’s used like any other color keyword:
+
+color: transparent;
+
 
