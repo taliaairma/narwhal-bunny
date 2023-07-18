@@ -12,3 +12,11 @@ h1 {
     font-size: 19px;
     font-family: 'Lobster Two', cursive;
 }
+
+p {
+    color: #E664FB;
+    text-align: left;
+    font-size: 24px;
+    font-family: 'Lobster Two', cursive;
+    font-weight: 100;
+}
