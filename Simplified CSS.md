@@ -657,3 +657,32 @@ div.special {
 }
 
 July 16, 2023: 
+Foreground vs Background
+
+Foreground color is the color that an element appears in. For example, when a heading is styled to appear green, the foreground color of the heading has been styled. 
+
+In CSS, these two design aspects can be styled with the following two properties: 
+- color: Foreground Color 
+- background-color: Background Color
+
+h1 {
+    color: red;
+    background-color: blue;
+}
+
+Hexadecimal 
+
+One syntax that we can use to specify colors is called hexadecimal. 
+Colors specified using this system are called hex colors. A hex color begins with a hash character (#) which is followed by three or six characters. 
+
+darkseagreen: #8FBC8F
+sienna:       #A0522D
+saddlebrown:  #8B4513
+brown:        #A52A2A
+black:        #000000 or #000
+white:        #FFFFFF or #FFF
+aqua:         #00FFFF or #0FF
+
+*Notice that black, white, and aqua are all represented with both three characters and six characters. This can be done with hex colors whose number pairs are the same characters. In the example above, aqua can be represented as #0FF because both of the first two characters are 0 and the second and third pairs of characters are both Fs. Keep in mind that all three character hex colors can be represented with six characters (by repeating each character twice) but the same is not true in reverse.
+
+RGB Colors 
