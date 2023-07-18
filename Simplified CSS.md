@@ -687,4 +687,10 @@ aqua:         #00FFFF or #0FF
 
 RGB Colors 
 
-Another syntax for representing RGB values 
+Another syntax for representing RGB values, commonly referred to as "RGB Value" or just "RGB", that uses decimal numbers rather than hexadecimals. 
+
+h1 {
+  color: rgb(23, 45, 23);
+}
+
+
