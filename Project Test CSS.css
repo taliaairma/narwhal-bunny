@@ -1,9 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     font-family: 'Pacifico', cursive;
     text-align: center;
     font-size: 96px;
     font-weight: 300;
     color: #F5A9F0;
+    line-height: 80%;
 } 
 
 h1 {
@@ -19,4 +25,9 @@ p {
     font-size: 24px;
     font-family: 'Lobster Two', cursive;
     font-weight: 100;
+    padding: 2rem 3rem;
 }
+
+/* start of rich's stylings (delete later) */
+
+/* end of rich's stylings */
