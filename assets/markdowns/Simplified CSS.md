@@ -785,4 +785,13 @@ The font-weight property can take any one of these keyword values:
 
 * It’s important to note that not all fonts can be assigned a numeric font weight, and not all numeric font weights are available to all fonts. It’s a good practice to look up the font you are using to see which font-weight values are available.
 
+Font Style
+You can italicize text with the font-style property. 
+
+h3 {
+    font-style: italic;
+}
+
+The italic value causes text to appear in italics. The font-style property also has a normal value which is the default. 
+
 
