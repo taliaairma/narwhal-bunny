@@ -49,3 +49,20 @@ console.log('Location of Codecademy headquarters: 575 Broadway, New York City');
 console.log(40);
 
 Our string isn't just a single word; it includes both capital and lowercase letters, spaces, and punctuation. 
+
+Arithmetic Operators
+An operator is a character that performs a task in our code. JavaScript has several built-in arithmetic operators, that allow us to perform mathematical calculations on numbers. These include the following operators and their corresponding symbols:
+
+Add: +
+Subtract: -
+Multiply: *
+Divide: /
+Remainder: %
+The first four work how you might guess:
+
+console.log(3 + 4); // Prints 7
+console.log(5 - 1); // Prints 4
+console.log(4 * 2); // Prints 8
+console.log(9 / 3); // Prints 3
+
+
