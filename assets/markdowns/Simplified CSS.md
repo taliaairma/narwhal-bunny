@@ -744,3 +744,45 @@ color: transparent;
 Typography
 
 Font Family
+July 20, 2023:
+
+Multi Word Values: 
+h1 {
+    font-family: 'Times New Roman';
+}
+
+Fallback Fonts & Font Stacks: 
+h1 {
+    font-family: Caslon, Georgia, 'Times New Roman';
+}
+
+Serif and Sans-Serif: 
+Serif fonts have extra details on the ends of each letter, as opposed to Sans-Serif fonts, which do not have extra details.
+
+serif and sans-serif are also keyword values that can be added as a final fallback font if nothing else in the font stack is available. 
+
+h1 {
+    font-family: Caslon, Georgia, 'Times New Roman', serif;
+}
+
+Font Weight
+
+Keyword Values:
+The font-weight property can take any one of these keyword values: 
+- bold
+- normal: Default value.
+- lighter: One font weight lighter than the element's parent value.
+- bolder: One font weight bolder than the element's parent value.
+ 
+ Numerical Values: 
+ .left-section {
+    font-weight: 700;
+ }
+
+ .right-section {
+    font-weight: bold;
+ }
+
+* It’s important to note that not all fonts can be assigned a numeric font weight, and not all numeric font weights are available to all fonts. It’s a good practice to look up the font you are using to see which font-weight values are available.
+
+
