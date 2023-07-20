@@ -794,4 +794,43 @@ h3 {
 
 The italic value causes text to appear in italics. The font-style property also has a normal value which is the default. 
 
+Text Transformation
+Text can also be styled to appear in either all uppercase or lowercase with the text-transform property.
+
+h1 {
+    text-transform: uppercase;
+}
+
+Text Layout
+
+Letter Spacing:
+The letter-spacing property is used to set the horizontal spacing between the individual characters in an element. It's not common to set the spacing between letts, but it can sometimes help the readability of certain fonts or styles. The letter-spacing property takes length values in units, such as 2px or 0.5em.
+
+p {
+    letter-spacing: 2px;
+}
+
+Word Spacing:
+You can set the space between words with the word-spacing property. It's also not common to increase the spacing between words, but it may help enhance the readability of bolded or enlarged text. The word-spacing property also takes length values in units such as 3px or 0.2em.
+
+h1 {
+    word-spacing: 0.3em;
+}
+
+Line Height: 
+<img src="https://content.codecademy.com/courses/updated_images/htmlcss1-diagram__leading_updated_1-01.svg" alt="Line Height"/>
+
+We can use the line-height property to set how tall we want each line containing our text to be. Line height values can be unitless number, such as 1.2, or a length value, such as 12px, 5% or 2em.
+
+p {
+    line height: 1.4;
+}
+
+Text Alignment:
+The text-align property aligns text to its parent element.
+
+h1 {
+    text-align: right;
+}
+
 
