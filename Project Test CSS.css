@@ -39,7 +39,7 @@ h1 {
 p {
   color: #202020;
   text-align: left;
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Lobster Two", cursive;
   font-weight: 100;
   padding: 2rem 3rem 3rem 3rem;
@@ -58,3 +58,18 @@ img {
   width: 100%;
 }
 /* end of icon stylings */
+
+div {
+  font-family: 'Katibeh', cursive;
+  font-size: 30px;
+}
+
+.genre {
+  font-size: 19px;
+  font-family: 'Katibeh', cursive;
+}
+
+.collabs {
+  font-size: 19px;
+  font-family: 'Katibeh', cursive;
+}
