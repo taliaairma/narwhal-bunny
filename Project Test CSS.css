@@ -5,15 +5,11 @@
 
 html,
 body {
-  width: 100%;
-  height: 100%;
   margin: 0; /* Space from this element (entire page) and others*/
   padding: 3rem; /*space from content and border*/
   border: 10rem solid linear-gradient(#f5a9f0, blue);
   border-width: thick;
   border-radius: 25px;
-  overflow: hidden;
-  /* display: block; */
   box-sizing: border-box;
   box-shadow: inset 0 0 100px #f5a9f0;
 }
@@ -59,17 +55,25 @@ img {
 }
 /* end of icon stylings */
 
-div {
-  font-family: 'Katibeh', cursive;
+.interests-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.gg-int,
+.collab-int {
+  font-family: "Katibeh", cursive;
   font-size: 30px;
+  padding: 0 3rem 3rem 3rem;
 }
 
 .genre {
   font-size: 19px;
-  font-family: 'Katibeh', cursive;
+  font-family: "Katibeh", cursive;
 }
 
 .collabs {
   font-size: 19px;
-  font-family: 'Katibeh', cursive;
+  font-family: "Katibeh", cursive;
 }
