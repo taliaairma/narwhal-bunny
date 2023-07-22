@@ -39,6 +39,8 @@ p {
   font-family: "Lobster Two", cursive;
   font-weight: 100;
   padding: 2rem 3rem 3rem 3rem;
+  justify-content: center;
+  text-align: center;
 }
 
 img {
@@ -76,4 +78,11 @@ img {
 .collabs {
   font-size: 19px;
   font-family: "Katibeh", cursive;
+}
+
+.footer {
+  font-family: "Lobster Two", cursive;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 0 1rem 0;
 }
