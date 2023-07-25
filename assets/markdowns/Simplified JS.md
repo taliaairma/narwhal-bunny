@@ -210,3 +210,35 @@ Constant variables muse be assigned a value when declared. If you try to declare
 
 If you're trying to decide between which keyword to use, let or const, think about whether you'll need to reassign the variable later on. If you do need to reassign the variable use let, otherwise, use const.
 
+Mathematical Assignment Operators 
+
+let w = 4;
+w = w + 1;
+ 
+console.log(w); // Output: 5
+
+In the example above, we created the variable w with the number 4 assigned to it. The following line, w = w + 1, increases the value of w from 4 to 5.
+
+Another way we could have reassigned w after performing some mathematical operations on it is to use built-in mathematical assignment operators. We could re-write the code above to be: 
+
+let w = 4;
+w += 1;
+ 
+console.log(w); // Output: 5
+
+In the second example above, we used the += assignment operator to reassign w. We're performing the mathematical operation of the first operator + using the number to the right, then reassigning w with the computed value. 
+
+We also have access to other mathmatical assignment operators: -=. *=, and /= which work in a similar fashion. 
+
+let x = 20;
+x -= 5; // Can be written as x = x - 5
+console.log(x); // Output: 15
+ 
+let y = 50;
+y *= 2; // Can be written as y = y * 2
+console.log(y); // Output: 100
+ 
+let z = 8;
+z /= 2; // Can be written as z = z / 2
+console.log(z); // Output: 4
+
