@@ -242,3 +242,18 @@ let z = 8;
 z /= 2; // Can be written as z = z / 2
 console.log(z); // Output: 4
 
+The Increment and Decrement Operator
+
+The increment operator (++) and decrement operator (--).
+
+The increment operator will increase the  value of the variable by 1. The decrement operator will decrease the value of the variable by 1. 
+
+let a = 10;
+a++;
+console.log(a); // Output: 11
+
+let b = 20;
+b--;
+console.log(b); // Output: 19
+
+
