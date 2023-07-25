@@ -92,3 +92,31 @@ console.log('middle' + ' ' + 'space');
 console.log('One' + ', ' + 'two' + ', ' + 'three!'); 
 // Prints 'One, two, three!'
 
+Properties 
+
+All data types have access to specific properties that are passed down to each instance. For example, every string instance has a property called length that stores the number of characters in that string. You can retrieve property information by appending the string with a period and the property name: 
+
+console.log('Hello'.length); // Prints 5
+
+The . is another operator! We call it the dot operator. 
+
+Methods 
+
+Methods are actions we can perform. Data types have access to specific methods that allow us to handle instances of that data type. 
+
+Javascript provides a number of string methods.
+We call or use, these methods by appending an instance with: 
+- a period (the dot operator)
+- the name of the method
+- opening and closing parentheses
+
+eg, 'example string'.methodName().
+
+console.log('hello'.toUpperCase()); // Prints 'HELLO'
+
+On the first line, the .toUpperCase() method is called on the string instance  'hello'. The result is logged to the console. THis method returns a string in all capital letters: 'HELLO'.
+
+console.log('Hey'.startsWith('H')); // Prints true
+
+On the second line, the .startsWith() method is called on the string instane 'Hey'. This method also accepts the character 'H' as an input, or argument, between the parentheses. Since the string 'Hey' does start with the letter 'H', the method reutrns the boolean true.
+
