@@ -120,3 +120,26 @@ console.log('Hey'.startsWith('H')); // Prints true
 
 On the second line, the .startsWith() method is called on the string instane 'Hey'. This method also accepts the character 'H' as an input, or argument, between the parentheses. Since the string 'Hey' does start with the letter 'H', the method reutrns the boolean true.
 
+Built-in Objects 
+
+There are other objects built into JavaScript. For example, if you wanted to perform more complex mathematical operations than arithmetic, JavaScript has the built-in Math object.
+
+* The great thing about objects is taht they have methods! 
+
+console.log(Math.random()); // Prints a random number between 0 and 1
+In the example above, we called the .random() method by appending the object name with the dot operator, the name of the method, and opening and closing parentheses. This method retuens a random number between 0 (inclusive) and 1 (exclusive).
+
+To generate a random number between 0 and 50, we could multiply this result by 50 like so: 
+Math.random() * 50;
+
+Math.floor() takes a decimal number, and rounds down to the nearest whole number. You can use Math.floor() to round down a random number like this: 
+Math.floor(Math.random() * 50);
+
+In this case: 
+1. Math.random() generates a random number between 0 and 1. 
+2. We then multiply that number by 50, so now we have a number between 0 and 50.
+3. Then Math.floor() rounds the number down to the nearest whole number. 
+
+* If you wanted to see the number printed to the terminal, you would still need to use a console.log() statement: 
+console.log(Math.floor(Math.random() * 50)); // Prints a random whole number between 0 and 50
+
