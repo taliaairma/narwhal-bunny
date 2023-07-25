@@ -159,3 +159,54 @@ There are only a few things you can do with variables:
 <img src="https://content.codecademy.com/courses/learn-javascript-variables/variable%20boxes.svg" alt="variables">
 
 Create a Variable: var
+
+var myName = 'Arya';
+console.log(myName);
+// Output: Arya
+
+1. var, short for variable, is a JavaScript keyword that creates, or declares, a new variable.
+2. myName is the variable's name. Capitalizing in this way is a standara convention in JavaScript called camel casing. 
+>> In camel casing you group words into one, the first word is lowercase, then every word that follows will have its first letter uppercased (e.g., camelCaseEverything)
+3. = is the assignment operator. It assigns the value ('Arya') to the variable (myName).
+4. 'Arya' is the value assigned (=) to the variable myName.. You can also say that the myName variable is initialized with a value of 'Arya'.
+5. After the variable is declared, the string value 'Arya' is printed to the console by referencing the variable name: console.log(myName).
+
+There are a few general rules for naming variables: 
+- Variable names cannot start with numbers. 
+- Variable names are case sensitive, so myName and myname would be different variable.
+>> It is bad practice to create two variable that have the same name using different cases.
+- Variable names cannot be the same as keywords.
+
+Variable: let
+
+The let keyword signals that the variable can be reassigned a different value.
+
+let meal = 'Enchiladas';
+console.log(meal); // Output: Enchiladas
+meal = 'Burrito';
+console.log(meal); // Output: Burrito
+
+Another concept that we should be aware of when using let (and even var) is that we can declare a variable without assigning the variable a value. In such a case, the variable will be automatically initialized with a value of undefined: 
+
+let price;
+console.log(price); // Output: undefined
+price = 350;
+console.log(price); // Output: 350
+
+* In the example above: 
+- If we don't assign a value to a variable declared using the let keyword, it automatically has a value of undefinded. 
+- We can reassign the value of the variable. 
+
+Variable: const
+
+Just like with var and let you can store any value in a const variable. The way you declare a const variable and assign a value to it follows the same structure as let and var. 
+
+const myName = 'Gilberto';
+console.log(myName); // Output: Gilberto
+
+However, a const variable cannot be reassigned becuase it is a constant. If you try to reassign a const variable, you'll get a TypeError.
+
+Constant variables muse be assigned a value when declared. If you try to declare a const variable without a value, you'll get a SyntaxError.
+
+If you're trying to decide between which keyword to use, let or const, think about whether you'll need to reassign the variable later on. If you do need to reassign the variable use let, otherwise, use const.
+
