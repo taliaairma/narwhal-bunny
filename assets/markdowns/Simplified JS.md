@@ -143,3 +143,19 @@ In this case:
 * If you wanted to see the number printed to the terminal, you would still need to use a console.log() statement: 
 console.log(Math.floor(Math.random() * 50)); // Prints a random whole number between 0 and 50
 
+Variables 
+
+A variable is a container for a  value. Variables are like little containers for information that live in a computer's memory. Information stored in variables, such as a username, account number, or even personalized greeting can then be found in memory. 
+
+Variables also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. 
+
+There are only a few things you can do with variables: 
+1. Create a variable with a descriptive name. 
+2. Store or update information stored in a variable.
+3. Reference or "get" information stored in a variable.
+
+* It is important to distinguish that variables are not values; they contain values and represent them with a names. Observe the diagram with a the colored boxes. Each box represents variables; the values are represented by the content, and the name is represented with the label. 
+
+<img src="https://content.codecademy.com/courses/learn-javascript-variables/variable%20boxes.svg" alt="variables">
+
+Create a Variable: var
