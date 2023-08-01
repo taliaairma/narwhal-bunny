@@ -352,6 +352,31 @@ An else statement must be paired with an if statement, and together they are ref
 
 if...else statements allow us to automate solutions to yes-or-no questions, also known as binary decisions. 
 
+Comparison Operators 
+
+Sometimes we need to use different types of operators to compare values. 
+
+A list of some handy comparison operators and their syntax: 
+- less than: <
+- great than: >
+- less than or equal to: <=
+- greater than : >=
+- is equal to: ===
+- is not equal to : !==
+
+10 < 12 // Evaluates to true
+
+It can be helpful to think of comparison statements as questions. When the answer is "yes", the statement evaluates to true, and when the answer is "no", the statement evaluates to false. The code above would be asking: is 10 less than 12? Yes! So 10 < 12 evaluates to true.
+
+'apples' === 'oranges' // false
+
+We're using the identity operator (===) to check if the string 'apples' is the same as the string 'oranges'. Since the two strings are not the same, the comparison statement evaluates to false. 
+
+All comparison statements evaluate to either true or false and are made up of: 
+- Two values that will be compared.
+- An operator that separates the values and compares them accordingly (<,>, <=, >=, ===, !==)
+
+
 
 
 
