@@ -471,4 +471,24 @@ console.log(defaultName); // Prints: Stranger
 
 Because || or statements check the left-hand condition first, the variable defaultName will be assigned the actual value of username if it is truthy, and it will be assigned the value of 'Stranger' if username is falsy. This concept is also referred to as short-circuit evaluation. 
 
+Ternary Operator
 
+We can use ternary operator to simplify an if...else statement. 
+
+let isNightTime = true;
+ 
+if (isNightTime) {
+  console.log('Turn on the lights!');
+} else {
+  console.log('Turn off the lights!');
+}
+
+We can use ternary operator to perform the same functionality: 
+isNightTime ? console.log('Turn on the lights!') : console.log('Turn off the lights!');
+
+- The condition, isNightTime, is providied before the ?.
+- Two expressions follow the ? and are separated by a colon :.
+- If the condition evaluates to true, the first expression executes.
+- If the condition evaluates to false, the second expression executes. 
+
+Like if...else statements, ternary operators can be used for conditions which evaluate to true or false. 
