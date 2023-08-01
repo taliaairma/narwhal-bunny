@@ -267,4 +267,20 @@ console.log('I own a pet ' + myPet + '.');
 In the example above, we assigned the value 'armadillo' to the myPet variable. On the second line, the + operator is used to combine three strings: 'I own a pet', the value saved to myPet, and '.'. We log the result of this concatenation to the console as: I own a pet armadillo. 
 
 String Interpolation
+August 1, 2023
+
+We can insert, or interpolate vairables into strings using template literals. 
+
+const myPet = 'armadillo';
+console.log(`I own a pet ${myPet}.`);
+// Output: I own a pet armadillo.
+
+- a template literal is wrapped by backticks ` (this key is usually located on the top of your keyboard, left of the 1 key
+).
+- Inside the template literal, you'll see a placeholder, ${myPet}. The value of myPet is inserted into the template literal. 
+- When we interpolate `I own a pet ${myPet}.`, the output we print is the string:  'I own a pet armadillo.'
+
+* Using template literal, you can more easily tell what the new string will be. You also don't have to worry about escaping double quotes or single quotes.
+
+
 
