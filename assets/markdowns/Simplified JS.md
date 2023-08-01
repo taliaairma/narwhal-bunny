@@ -299,6 +299,23 @@ console.log(typeof unknown3); // Output: boolean
 
 Since the value unknown1 is 'foo', a string, typeof unknow1 will return 'string'.
 
+Conditional Statements
+
+Think of an everyday decision as mundane as falling asleep - if we are tired, we got to bed, otherwise, we wake up and start our day. 
+
+These if-else decisions can be modeled in code by creating conditional statements. A conditional statement checks a specific condition(s) and performs a task based on the condition(s). 
+
+Will be covering: 
+- if, else if, and else statements
+- comparison operators
+- logical operators
+- truthy vs falsy values
+- ternary operators
+- switch statements
+
+<img src='https://content.codecademy.com/courses/learn-javascript-conditionals/control_flow_diagram_v5.svg' alt='conditions'>
+
+If Statements
 
 
 
