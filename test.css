@@ -23,10 +23,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(189, 100%, 87%);
+    color: hsl(310, 100%, 50%);
     padding: 0.25em 1em;
-    text-shadow: 0 0 1rem hwb(249 17% 1%);
-    background: #6728af;
+    text-shadow: 0 0 1rem hwb(0 100% 0%);
+    background: #fcfcfc00;
   }
 
   .option2 {
@@ -52,13 +52,13 @@
   }
 
   .option4 {
-    font-size: 8rem;
+    font-size: 25rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: hsl(293, 88%, 91%);
+    color: hsl(295, 100%, 98%);
     padding: 0.25em 1em;
-    text-shadow: 0 0 1rem hwb(295 53% 0%);
+    text-shadow: 0 0 1rem hwb(308 62% 0%);
     background: #ff13ff;
   }
 
