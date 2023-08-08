@@ -599,3 +599,28 @@ const area3 =  width3 * height3;
 Instead of rewriting the same code, we can group a block of code together and associate it with one task, then we can reuse that block of code together and associate it with one task, then we can reuise that block of code whenever we need to perform the task again. 
 
 A functions is a reusable block of code that groups together a sequence of statements to perform a specific task. 
+
+Function Declarations
+
+One of the ways to create a function is by using a function declaration. 
+
+A function declaration binds a function to a name, or an identifier. 
+
+<img src="https://content.codecademy.com/courses/learn-javascript-functions/Diagram/declaration.svg" alt="function declaration"/>
+
+It consists of: 
+- The function keyword.
+- THe name of the function, or its identifier, followed by parentheses. 
+- A function body, or the block of statements required to perform a specific task, enclosed in the funciton's curly brackets.
+
+* should also be aware of the hoisting feature in Javascript which allows access to function declarations before they're defined. 
+
+hoisting example: 
+
+greetWorld(); // Output: Hello, World!
+ 
+function greetWorld() {
+  console.log('Hello, World!');
+}
+
+Notice, how hositing allowed greetWorld() to be called before the greetWorld() function was defined! Since hoisting isn't considered good practice, we simply want you to be aware of this feature. 
