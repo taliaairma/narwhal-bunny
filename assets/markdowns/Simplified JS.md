@@ -624,3 +624,17 @@ function greetWorld() {
 }
 
 Notice, how hositing allowed greetWorld() to be called before the greetWorld() function was defined! Since hoisting isn't considered good practice, we simply want you to be aware of this feature. 
+
+Calling a Function
+
+To call a function in your code, you type the funciton name followed by parentheses. 
+
+This function call executes the function body, or all of the statements between the curly braces in the function declaration. 
+
+1. function sayThanks() {
+        console.log('Thank you for your purchase! We appreciate your business.')
+}
+
+2. sayThanks();
+3. // Thank you for your purchase! We appreciate your business! 
+
