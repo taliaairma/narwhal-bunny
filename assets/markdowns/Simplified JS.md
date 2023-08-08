@@ -638,3 +638,32 @@ This function call executes the function body, or all of the statements between 
 2. sayThanks();
 3. // Thank you for your purchase! We appreciate your business! 
 
+Parameters and Arguments 
+
+Some functions can take inputs an use the inputs to perform a task. When declaring a function, we can specify its parameters. 
+
+Parametes allow functions to accept input(s) and perform a task using the input(s). We use parameters as placeholders for information that will be passed to the function when it is called. 
+
+function calculateArea(width,height)  {
+    console.log(width * height);
+}
+<!-- (widht, height) parameters -->
+<!-- (width * height) parametes are treated like variables within a function -->
+
+In the example above, calculateArea(), computes the area of a rectangle, based on two inputs, width and height. The parameters are specified between the parenthesis as width and height, and inside the function body, they act just like regular variables. 
+
+Width and height act a placeholders for values that will be multipled together. 
+
+When calling a function that has parameters, we specify the values in the parentheses that follow the function name. THe values that are passed to the function when it is called, arguments. 
+
+Arguments can be passed to the function as values or variables. 
+
+calculateArea(10, 6);
+<!-- calculateArea = identifier; (10, 6) = arguments as values -->
+
+* The order in which arguments are passed and assigned follows the order that the parameters are declared. 
+
+The variables rectWidth and rectHeight are initialized with the values for the height and width of a rectangle before being used in the function call. 
+
+By using parameters, calculateArea() can be reused to compute the area of any rectangle! 
+
