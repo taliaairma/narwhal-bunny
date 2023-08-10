@@ -17,7 +17,7 @@ body {
 header {
   font-family: "Pacifico", cursive;
   text-align: center;
-  font-size: 96px;
+  font-size: 104px;
   font-weight: 300;
   color: #f5a9f0;
   line-height: 95%;
@@ -25,7 +25,7 @@ header {
 }
 
 .name {
-  font-size: 4rem;
+  font-size: 5rem;
   color: hsl(317 100% 54%);
   padding: 0.25em 1em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
