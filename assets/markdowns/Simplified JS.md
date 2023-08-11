@@ -682,3 +682,154 @@ greeting() // Output: Hello, stranger!
 - When the code calls greeting('Nick') the value of the argument is passed in and, 'Nick', will override the default parameter of 'stranger' to log 'Hello, Nick!' to the console. 
 - When there isn't an argument passed into greeting(),  the default value of 'stranger' is used, and 'Hello, stranger!' is logged to the console. 
 
+August 10th, 2023: 
+
+Return
+
+When a function is called, the computer will run through the fucntion's code and evaluate the results of calling the function. By default that resulting value is undefined. 
+
+function rectangleArea(width, height) {
+  let area = width * height;
+}
+console.log(rectangleArea(5, 7)) // Prints undefined
+
+To pass back information from the function call, we use a return statement. To create a return statement, we  use the return keyword followed by the value that we wish to return. If a value is omitted,a undefined is returned instead. 
+
+When a return statement is used in a function body, the execution of the function is stopped and the code that follows it will not be executed. 
+
+function rectangleArea(width, height) {
+  if (width < 0 || height < 0) {
+    return 'You need positive integers to calculate area!';
+  }
+  return width * height;
+}
+
+If an argument for width or height is less than 0, then rectangleArea() will return 'You need positive integers to calculate area!'. The second return statment width * height will not run. 
+
+The return keyword is powerful because it allows functions to produce an output. We can then save the output to a variable for later use. 
+
+Helper Functions
+ 
+ These functions being called within another function are often referred to as helper functions. Since each function is carrying out a specific task, it makes our code easier to read and debug if necessary. 
+
+ if we wanted to define a function that converts the temperature from Celsius to Fahrenheit, we could write two functions: 
+
+ function multiplyByNineFifths(number) {
+    return number * (9/5);
+ };
+
+ function getFahrenheit(celsius) {
+    return multiplyByNineFifths(celsius) + 32;
+ };
+
+ getFahrenheit(15);
+ <!-- // Returns 59 -->
+
+ In the example above: 
+
+ - getFahrenheit() is called and 15 is passed as an argument. 
+ - The code block inside of getFahrenheit() calls multiplyByNineFifths() and passes 15 as an argument. 
+ - multiplyByNineFifths takes the argument of 15 for the number parameter. 
+ - the code block inside of multiplyByNineFifths() function multiplies 15 by (9/5), which evaluates to 27. 
+ - 27 is returned back to the function call in getFahrenheit().
+ - getFahrenheit() continues to execute. It adds 32 to 27, which evaluates to 59. 
+ - 59 is returned back to the function call getFahrenheit(15).
+
+Function Expressions
+
+Another way to define a function is to use a function expression. To define a function inside an expression, we can use the function keyword. In a function expression, the function name is usually omitted. A function with no name is called an anonymous function. A function expressions is often stored in a variable in order to refer to it. 
+
+Consider the following function expression: 
+const calculateArea = function(width, height) {
+    const area = width * height;
+    return area;
+};
+
+To declare a function expression: 
+1. Declare a variable to make the variable's name be the name or identifier, of your function. Since the release of ES6, it is common prectice to use const as the keyword to declare the variable. 
+2. Assign as that variable's value an anonymous function created by using the function keyword followed by a set of parentheses with possible parameters. Then set of curly braces that contain the function body. 
+
+To invoke a function expression, write the name of the variable in which the function is stored followed by parentheses exclosing any arguments being passed into the function. 
+
+variableName(argument1, argument2)
+
+Unlike function declarations, function expressions are not hoisted so they cannot be called before they are defined. 
+
+Arrow Functions 
+
+A shorter way to write function by using the special "fat arrow" () => notation. 
+
+Arrow functions remove the need to type our the keyword function every time you need to creat a function. Instead you first include the parameters inside the () and then add an arrow => that  points to the function body surrounded in { }: 
+
+const rectangleArea = (width, height) => {
+  let area = width * height;
+  return area;
+};
+
+* It's important to be familiar with the multiple ways of writing functions becuase you will come across each of these when reading other JavaScript code. 
+
+Concise Body Arrow Functions
+
+JS also provides several ways to refactor arrow function syntax. The most condensed form of the function is known as concise boy. We'll explore a few of these techniques below: 
+
+1. Functions that take only a single parameter do not need that parameter to be enclosed in parenteses. 
+>> However, if a function takes zero or multiple parameters, parentheses are required. 
+
+2. A function body composed of single-line block does not need curly braces. Without the curly braces, whatever that line evaluates will be automatically returned. The contents of the block should immediately follow the arrow => and the return keyword can be removed. This is referred as implicit return. 
+
+So if we have a function: 
+const squareNum = (num) => {
+  return num * num;
+};
+
+We can refactor the function to: 
+const squareNum = num => num * num;
+
+Notice the following changes: 
+- The parentheses around num have been removed, since it has a single parameter. 
+- The curly braces { } have been removed isnce the function consists of a single-line block. 
+- The return keyword has been removed since the function consists of a single-line block. 
+
+Scope 
+
+Scope defines where variables can be accessed or referenced. While some variables can be accessed from anywhere within a program, other variables may only be available in a specific context. 
+
+Blocks and Scope
+
+Blocks help us group one or more statements together and serve as an important structural markers for our code. 
+
+A block of code could be a function: 
+
+const logSkyColor = () => {
+  let color = 'blue';
+  console.log(color);
+} // blue
+
+
+* Function body is actually a block of code. 
+
+Observethe block in an if statement: 
+
+if(dusk) {
+  let color = 'pink';
+  console.log(color);
+} // pink
+
+Global Scope
+
+Scope is the context which our variables are declared. We think about scope in relation to blocks becuase variables can exist either outside of or within these blocks. 
+
+In global scope, variables are declared outside of blocks. These variables are called global variables. Because global variables are not bound inside a block, They can be accessed by any code in the program, inlcuding code in blocks. 
+
+const color = 'blue';
+
+const returnSkyColor = () => {
+  return color; // blue
+};
+
+console.log(returnSkyColor()); // blue
+
+- Even though the color variable is defined outside of the block, it can be accessed in the function block, giving it global scope. 
+- In turn, color can be accessed within the returnSkyColor function block.
+
+Block Scope
