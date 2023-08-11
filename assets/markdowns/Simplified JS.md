@@ -708,3 +708,31 @@ If an argument for width or height is less than 0, then rectangleArea() will ret
 
 The return keyword is powerful because it allows functions to produce an output. We can then save the output to a variable for later use. 
 
+Helper Functions
+ 
+ These functions being called within another function are often referred to as helper functions. Since each function is carrying out a specific task, it makes our code easier to read and debug if necessary. 
+
+ if we wanted to define a function that converts the temperature from Celsius to Fahrenheit, we could write two functions: 
+
+ function multiplyByNineFifths(number) {
+    return number * (9/5);
+ };
+
+ function getFahrenheit(celsius) {
+    return multiplyByNineFifths(celsius) + 32;
+ };
+
+ getFahrenheit(15);
+ <!-- // Returns 59 -->
+
+ In the example above: 
+
+ - getFahrenheit() is called and 15 is passed as an argument. 
+ - The code block inside of getFahrenheit() calls multiplyByNineFifths() and passes 15 as an argument. 
+ - multiplyByNineFifths takes the argument of 15 for the number parameter. 
+ - the code block inside of multiplyByNineFifths() function multiplies 15 by (9/5), which evaluates to 27. 
+ - 27 is returned back to the function call in getFahrenheit().
+ - getFahrenheit() continues to execute. It adds 32 to 27, which evaluates to 59. 
+ - 59 is returned back to the function call getFahrenheit(15).
+
+ 
