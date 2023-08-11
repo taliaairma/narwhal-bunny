@@ -755,3 +755,16 @@ variableName(argument1, argument2)
 
 Unlike function declarations, function expressions are not hoisted so they cannot be called before they are defined. 
 
+Arrow Functions 
+
+A shorter way to write function by using the special "fat arrow" () => notation. 
+
+Arrow functions remove the need to type our the keyword function every time you need to creat a function. Instead you first include the parameters inside the () and then add an arrow => that  points to the function body surrounded in { }: 
+
+const rectangleArea = (width, height) => {
+  let area = width * height;
+  return area;
+};
+
+* It's important to be familiar with the multiple ways of writing functions becuase you will come across each of these when reading other JavaScript code. 
+
