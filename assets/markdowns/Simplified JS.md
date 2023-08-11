@@ -768,3 +768,24 @@ const rectangleArea = (width, height) => {
 
 * It's important to be familiar with the multiple ways of writing functions becuase you will come across each of these when reading other JavaScript code. 
 
+Concise Body Arrow Functions
+
+JS also provides several ways to refactor arrow function syntax. The most condensed form of the function is known as concise boy. We'll explore a few of these techniques below: 
+
+1. Functions that take only a single parameter do not need that parameter to be enclosed in parenteses. 
+>> However, if a function takes zero or multiple parameters, parentheses are required. 
+
+2. A function body composed of single-line block does not need curly braces. Without the curly braces, whatever that line evaluates will be automatically returned. The contents of the block should immediately follow the arrow => and the return keyword can be removed. This is referred as implicit return. 
+
+So if we have a function: 
+const squareNum = (num) => {
+  return num * num;
+};
+
+We can refactor the function to: 
+const squareNum = num => num * num;
+
+Notice the following changes: 
+- The parentheses around num have been removed, since it has a single parameter. 
+- The curly braces { } have been removed isnce the function consists of a single-line block. 
+- The return keyword has been removed since the function consists of a single-line block. 
