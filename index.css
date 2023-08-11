@@ -67,7 +67,7 @@ header a {
 }
 
 h1 {
-  color: hsl(317 100% 54%);
+  color: rgb(0, 204, 255);
   text-align: center;
   font-size: 19px;
   font-family: "Lobster Two", cursive;
@@ -83,6 +83,12 @@ h1 {
   align-items: center;
 }
 
+.p-title {
+  font-size: 3rem;
+  color: rgb(0, 204, 255);
+  font-family: "Katibeh", cursive;
+}
+
 .profile-container p {
   flex-basis: 50%;
   text-align: left;
@@ -94,10 +100,12 @@ h1 {
   text-align: center;
 }
 
-.profile-container img {
+.profile-img {
   max-height: 21rem;
   max-width: auto;
   border-radius: 10px;
+  border: 2px solid rgb(0, 204, 255);
+  padding: 0.5rem;
 }
 
 img {
@@ -123,30 +131,32 @@ img {
 .gg-int,
 .collab-int {
   font-family: "Katibeh", cursive;
-  font-size: 30px;
+  font-size: 3rem;
   padding: 0 3rem 3rem 3rem;
   color: rgb(0, 204, 255);
 }
 
 .genre {
-  font-size: 19px;
+  font-size: 2rem;
   font-family: "Katibeh", cursive;
   color: hsl(317 100% 54%);
+  margin-left: 2rem;
+  list-style-type: circle;
 }
 
 .collabs {
-  font-size: 19px;
+  font-size: 2rem;
   font-family: "Katibeh", cursive;
   color: hsl(317 100% 54%);
+  margin-left: 2rem;
 }
 
 /* start of social media metrics here */
 
-.sm-metrics-title,
-.contact-link-out {
+.sm-metrics-title {
   padding: 1rem;
   font-family: "Katibeh", cursive;
-  font-size: 30px;
+  font-size: 5rem;
   text-align: center;
   justify-self: center;
   color: rgb(0, 204, 255);
@@ -202,24 +212,30 @@ img {
 }
 
 /* end of social media metrics here */
-
 .contact-div {
+  padding: 7rem 5rem 5rem 5rem;
   display: block;
   text-align: center;
-  padding: 5rem 0;
 }
 
 .contact-link-out {
-  font-size: 5rem;
   text-decoration: none;
+  font-family: "Lobster Two", cursive;
+  color: hsl(317 100% 54%);
   border: 2px solid rgb(0, 204, 255);
   border-radius: 25px;
-  
+  font-size: 5rem;
+  padding: 1rem 2rem;
+}
+
+.contact-link-out:hover {
+  color: rgb(0, 204, 255);
+  border: 2px solid rgb(255, 20, 189);
 }
 
 .footer {
   font-family: "Lobster Two", cursive;
   justify-content: center;
   text-align: center;
-  padding: 3rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
 }
