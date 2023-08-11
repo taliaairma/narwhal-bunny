@@ -832,3 +832,4 @@ console.log(returnSkyColor()); // blue
 - Even though the color variable is defined outside of the block, it can be accessed in the function block, giving it global scope. 
 - In turn, color can be accessed within the returnSkyColor function block.
 
+Block Scope

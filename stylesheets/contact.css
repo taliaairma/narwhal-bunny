@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.contact-title {
+  font-size: 3rem;
+  padding-top: 1rem;
+  color: hsl(317 100% 54%);
+}
+
+.name-field,
+.second-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+
+.name-field div {
+  padding: 1rem 1rem 0 1rem;
+}
+
+form {
+  padding: 1rem 3rem 3rem 3rem;
+  margin: 0 3rem;
+  border: 2px solid rgb(155, 221, 238);
+  border-radius: 25px;
+}
+
+label {
+  font-size: 2rem;
+  font-family: "Katibeh", cursive;
+  line-height: 3rem;
+}
+
+input,
+textarea {
+  font-size: 2rem;
+  background-color: #282828;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(155, 221, 238);
+  height: 3rem;
+  padding-left: 0.25rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Katibeh", cursive;
+}
+
+textarea {
+  resize: none;
+}
+
+.c-name-space,
+.message-space {
+  margin: 0 5.5rem;
+}
+
+.message-space {
+  padding-bottom: 2rem;
+}
+
+#company-name,
+#message {
+  width: 100%;
+}
+
+#message {
+  height: 10rem;
+}
+
+.submit-space {
+  display: block;
+  text-align: center;
+}
+
+button {
+  font-size: 2rem;
+  background-color: black;
+  /* color: #f3f2ed; */
+  font-family: "Lobster Two", cursive;
+  color: hsl(317 100% 54%);
+  border: 2px solid rgb(0, 204, 255);
+  border-radius: 25px;
+  padding: 1rem;
+  width: 20rem;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(0, 204, 255);
+  border: 2px solid rgb(255, 20, 189);
+}
+
+.socials-title {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  font-family: "Lobster Two", cursive;
+}
+
+/* start of icon stylings */
+.icons-tray {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  border: 2px solid rgb(0, 204, 255);
+  border-radius: 25px;
+  margin: 0 4.75rem;
+  padding: 3rem;
+}
+
+.icons-tray a {
+  border: 2px solid black;
+  border-radius: 25px;
+}
+
+.icons-tray a:hover {
+  border: 2px solid rgb(255, 20, 189);
+  border-radius: 25px;
+}
+/* end of icon stylings */

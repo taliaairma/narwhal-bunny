@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0; /* Space from this element (entire page) and others*/
+  padding: 3rem; /*space from content and border*/
+  border-width: thick;
+  border-radius: 25px;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 100px #ff14bd;
+  color: hsl(317 100% 54%);
+  background-color: black;
+  /* background-image: url('./assets/icons/profile-pic.jpg'); */
+}
+
+header {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 300;
+  color: #f5a9f0;
+  line-height: 95%;
+  padding-top: 2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: #f5a9f0;
+}
+
+.name,
+.name a {
+  font-size: 4rem;
+  color: hsl(317 100% 54%);
+  padding: 0.25em 1em;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+}
+
+.name:hover,
+.name:hover a {
+  color: rgb(0, 204, 255);
+}
+
+.pulsate {
+  animation: pulsate 0.9s ease-in-out;
+  animation-iteration-count: infinite;
+  opacity: 0.5;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+h1 {
+  color: rgb(0, 204, 255);
+  text-align: center;
+  font-size: 19px;
+  font-family: "Lobster Two", cursive;
+  padding-bottom: 1rem;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+  padding: 2rem 0 5rem 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-title {
+  font-size: 3rem;
+  color: rgb(0, 204, 255);
+  font-family: "Katibeh", cursive;
+}
+
+.profile-container p {
+  flex-basis: 50%;
+  text-align: left;
+  font-size: 30px;
+  font-family: "Lobster Two", cursive;
+  font-weight: 100;
+  padding: 1rem 6rem 1rem 1rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-img {
+  max-height: 21rem;
+  max-width: auto;
+  border-radius: 10px;
+  border: 2px solid rgb(0, 204, 255);
+  padding: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.interests-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.gg-int,
+.collab-int {
+  font-family: "Katibeh", cursive;
+  font-size: 3rem;
+  padding: 0 3rem 3rem 3rem;
+  color: rgb(0, 204, 255);
+}
+
+.genre {
+  font-size: 2rem;
+  font-family: "Katibeh", cursive;
+  color: hsl(317 100% 54%);
+  margin-left: 2rem;
+  list-style-type: circle;
+}
+
+.collabs {
+  font-size: 2rem;
+  font-family: "Katibeh", cursive;
+  color: hsl(317 100% 54%);
+  margin-left: 2rem;
+}
+
+/* start of social media metrics here */
+
+.sm-metrics-title {
+  padding: 1rem;
+  font-family: "Katibeh", cursive;
+  font-size: 5rem;
+  text-align: center;
+  justify-self: center;
+  color: rgb(0, 204, 255);
+}
+
+.sm-metrics-container {
+  display: grid;
+  gap: 1rem;
+  /* flex-direction: row; */
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(0, 204, 255);
+  border-radius: 25px;
+}
+
+.cards img {
+  padding-right: 1rem;
+}
+
+.insta-space {
+  grid-column: 1 / 1;
+  grid-row: 1;
+}
+
+.tiktok-space {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}
+
+.twitch-space {
+  grid-column: 1 / 1;
+  grid-row: 2;
+}
+
+.twitter-space {
+  grid-column: 2 / 2;
+  grid-row: 2;
+}
+
+.description {
+  font-size: 3rem;
+  font-family: "Lobster Two", cursive;
+  padding-right: 0.5rem;
+}
+
+/* end of social media metrics here */
+.contact-div {
+  padding: 7rem 5rem 5rem 5rem;
+  display: block;
+  text-align: center;
+}
+
+.contact-link-out {
+  text-decoration: none;
+  font-family: "Lobster Two", cursive;
+  color: hsl(317 100% 54%);
+  border: 2px solid rgb(0, 204, 255);
+  border-radius: 25px;
+  font-size: 5rem;
+  padding: 1rem 2rem;
+}
+
+.contact-link-out:hover {
+  color: rgb(0, 204, 255);
+  border: 2px solid rgb(255, 20, 189);
+}
+
+.footer {
+  font-family: "Lobster Two", cursive;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
