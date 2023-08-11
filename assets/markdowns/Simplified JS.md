@@ -789,3 +789,29 @@ Notice the following changes:
 - The parentheses around num have been removed, since it has a single parameter. 
 - The curly braces { } have been removed isnce the function consists of a single-line block. 
 - The return keyword has been removed since the function consists of a single-line block. 
+
+Scope 
+
+Scope defines where variables can be accessed or referenced. While some variables can be accessed from anywhere within a program, other variables may only be available in a specific context. 
+
+Blocks and Scope
+
+Blocks help us group one or more statements together and serve as an important structural markers for our code. 
+
+A block of code could be a function: 
+
+const logSkyColor = () => {
+  let color = 'blue';
+  console.log(color);
+} // blue
+
+
+* Function body is actually a block of code. 
+
+Observethe block in an if statement: 
+
+if(dusk) {
+  let color = 'pink';
+  console.log(color);
+} // pink
+
