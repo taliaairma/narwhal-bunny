@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +11,12 @@ html,
 body {
   margin: 0; /* Space from this element (entire page) and others*/
   padding: 3rem; /*space from content and border*/
-  border: 10rem solid linear-gradient(#f5a9f0, blue);
   border-width: thick;
   border-radius: 25px;
   box-sizing: border-box;
-  box-shadow: inset 0 0 100px #f5a9f0;
+  box-shadow: inset 0 0 100px #ff14bd;
+  color: hsl(317 100% 54%);
+  background-color: black;
   /* background-image: url('./assets/icons/profile-pic.jpg'); */
 }
 
@@ -25,14 +30,21 @@ header {
   padding-top: 2rem;
 }
 
-.name {
+header a {
+  text-decoration: none;
+  color: #f5a9f0;
+}
+
+.name,
+.name a {
   font-size: 4rem;
   color: hsl(317 100% 54%);
   padding: 0.25em 1em;
   text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
 }
 
-.name:hover {
+.name:hover,
+.name:hover a {
   color: rgb(0, 204, 255);
 }
 
@@ -42,7 +54,7 @@ header {
   opacity: 0.5;
 }
 
-@keyframes pulsate{
+@keyframes pulsate {
   0% {
     opacity: 1;
   }
@@ -55,7 +67,7 @@ header {
 }
 
 h1 {
-  color: #202020;
+  color: hsl(317 100% 54%);
   text-align: center;
   font-size: 19px;
   font-family: "Lobster Two", cursive;
@@ -73,7 +85,6 @@ h1 {
 
 .profile-container p {
   flex-basis: 50%;
-  color: #202020;
   text-align: left;
   font-size: 30px;
   font-family: "Lobster Two", cursive;
@@ -114,43 +125,96 @@ img {
   font-family: "Katibeh", cursive;
   font-size: 30px;
   padding: 0 3rem 3rem 3rem;
+  color: rgb(0, 204, 255);
 }
 
 .genre {
   font-size: 19px;
   font-family: "Katibeh", cursive;
+  color: hsl(317 100% 54%);
 }
 
 .collabs {
   font-size: 19px;
   font-family: "Katibeh", cursive;
+  color: hsl(317 100% 54%);
 }
 
+/* start of social media metrics here */
 
-.sm-metrics-title {
-  padding: 3rem;
+.sm-metrics-title,
+.contact-link-out {
+  padding: 1rem;
   font-family: "Katibeh", cursive;
   font-size: 30px;
   text-align: center;
   justify-self: center;
+  color: rgb(0, 204, 255);
 }
 
-.insta-container {
+.sm-metrics-container {
+  display: grid;
+  gap: 1rem;
+  /* flex-direction: row; */
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cards {
   display: flex;
   flex-direction: row;
-  padding: 3rem;
+  align-items: center;
+  justify-content: start;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(0, 204, 255);
+  border-radius: 25px;
 }
 
-/* .metrics-title-large {
-
+.cards img {
+  padding-right: 1rem;
 }
 
-.metrics-title-small {
-  
-} */
+.insta-space {
+  grid-column: 1 / 1;
+  grid-row: 1;
+}
+
+.tiktok-space {
+  grid-column: 2 / 2;
+  grid-row: 1;
+}
+
+.twitch-space {
+  grid-column: 1 / 1;
+  grid-row: 2;
+}
+
+.twitter-space {
+  grid-column: 2 / 2;
+  grid-row: 2;
+}
 
 .description {
+  font-size: 3rem;
+  font-family: "Lobster Two", cursive;
+  padding-right: 0.5rem;
+}
 
+/* end of social media metrics here */
+
+.contact-div {
+  display: block;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.contact-link-out {
+  font-size: 5rem;
+  text-decoration: none;
+  border: 2px solid rgb(0, 204, 255);
+  border-radius: 25px;
+  
 }
 
 .footer {
