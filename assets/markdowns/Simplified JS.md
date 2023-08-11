@@ -684,3 +684,27 @@ greeting() // Output: Hello, stranger!
 
 August 10th, 2023: 
 
+Return
+
+When a function is called, the computer will run through the fucntion's code and evaluate the results of calling the function. By default that resulting value is undefined. 
+
+function rectangleArea(width, height) {
+  let area = width * height;
+}
+console.log(rectangleArea(5, 7)) // Prints undefined
+
+To pass back information from the function call, we use a return statement. To create a return statement, we  use the return keyword followed by the value that we wish to return. If a value is omitted,a undefined is returned instead. 
+
+When a return statement is used in a function body, the execution of the function is stopped and the code that follows it will not be executed. 
+
+function rectangleArea(width, height) {
+  if (width < 0 || height < 0) {
+    return 'You need positive integers to calculate area!';
+  }
+  return width * height;
+}
+
+If an argument for width or height is less than 0, then rectangleArea() will return 'You need positive integers to calculate area!'. The second return statment width * height will not run. 
+
+The return keyword is powerful because it allows functions to produce an output. We can then save the output to a variable for later use. 
+
