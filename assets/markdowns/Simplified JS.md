@@ -908,3 +908,5 @@ You'll notice:
 Block scope allows us to define variables with precision and not pollute the global namespace. If a variable does not need to exist outside a block-- it shouldnt! 
 
 
+Arrays 
+
