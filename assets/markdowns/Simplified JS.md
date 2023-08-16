@@ -833,3 +833,6 @@ console.log(returnSkyColor()); // blue
 - In turn, color can be accessed within the returnSkyColor function block.
 
 Block Scope
+
+August 15, 2023
+
