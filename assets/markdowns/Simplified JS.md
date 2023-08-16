@@ -836,3 +836,43 @@ Block Scope
 
 August 15, 2023
 
+When a variable is defined inside a block, it is only accessible to the code within the curly braces {}. Variable has block scope because it is only accessible to the lines of codes within that block. 
+
+Variables that are declared with block scope are known as local variables because they are only available to the code that is part of the same block. 
+
+const logSkyColor = () => {
+  let color = 'blue';
+  console.log(color); // Prints "blue"
+};
+
+logSkyColor(); // Prints "blue"
+console.log(color); // throws a ReferenceError
+
+You'll notice: 
+- We define function logSkyColor().
+- Within the function, the color variable is only available within the curly braces {} of the function.
+- If we try to log the same variable outside the function, it throws a ReferenceError.
+
+Scope Pollution 
+
+When you declare global variables, they go to the global namespace. The global namespace allows the variables to be accessible from anywhere in the program. These variables remain there until the program remain there until the program finishes which means our global namespace can fill up really quickly. 
+
+Scope Pollution is when we have too many global variables that exist in the global namespace, or when we resue variables across different scopes. Scope pollution makes it difficult to keep track of our different variables and sets us up for potential accidents. For example, globally scoped variables that are more locally scoped, causing unexpected behavior in our code.
+
+let num = 50;
+
+const logNum = () => {
+  num = 100; // Take note of this line of code
+  console.log(num);
+};
+
+logNum(); // Prints 100
+console.log(num); // Prints 100
+
+You'll notice: 
+- We have a variable num.
+- Inside the unfction body of logNum(), we want to declare a new variable but forogt to use the let keyword.
+- When we call logNum(), num gets reassigned to 100. 
+- The reassignment inside logNum() affects the global variable num. 
+- Even though the reassignment is allowed and we won't get an error, if we decided to use num later, we'll unknowingly use the new value of num.
+
