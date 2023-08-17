@@ -932,4 +932,54 @@ let newYearsResolutions = ['Keep a journal', 'Take a falconry class', Learn to j
 
 Accessing Elements
 
-Each element in an array has a numbered position known as its index. We can access individual items using their index, which is similar to referencing an item in a list based on the item's position 
+Each element in an array has a numbered position known as its index. We can access individual items using their index, which is similar to referencing an item in a list based on the item's position. Arrays in JS are zero-indexed, meaning the positions start counting from 0 rather than 1. Therefore, the first tiem in an array will be at position 0. 
+
+let cities = ['New York', 'Beijing', 'Nairobi'];
+
+    cities[0]
+
+- cities is an array that has three elements. 
+- we're using bracket notation, [] with the index after the name of the array to access the element. 
+- cities[0] will access the element at index 0 in the array cities. You can think of cities[0] as accessing the space in memory that holds the string 'New York'.
+
+You can also access individual characters in a string using bracket notation and the index. For instance, you can write: 
+
+const hello = 'Hello World'; 
+console.log(hello[6]); 
+// Output: W 
+
+The console will display W since it is the character that is at index 6. 
+
+Update Elements 
+
+Once you have access to an element in an array, you cna update its value. 
+
+let seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
+
+seaons[3] = 'Autumn';
+console.log(seasons);
+// Output: ['Winter', 'Spring', 'Summer', 'Autumn']
+
+The line, seasons[3] = 'Autumn'; tells our program to change the item at index 3 of the seasons array to be 'Autumn' instead of waht is already there. 
+
+Arrays with let and const 
+
+Variables declared with let can be reassigned. 
+
+Variables declared with the const keyword cannot be reassigned. However, elements in an array declared with const remain mutable. Meaning that we cna change the contents of a const array, but cannot reassign a new array or a differnet value. 
+
+The .length property
+
+One of an array's built-in properties in length and it returns the number of items in the array. We access the .length property just like we do with strings. 
+
+const newYearsResolutions = ['Keep a journal', 'Take a falconry class'];
+
+console.log(newYearsResolutions.length); // Output: 2 
+
+In the example above, we log newYearsResolutions.length to the console using the following steps: 
+- We use dot notation, chaining a period with the property name to the array, to access the length property of the newYearsResolutions array. 
+- Then we log the length of newYearsResolution to the console. 
+- Since newYearsResolution has two elements, 2 would be logged to the console. 
+
+
+The .push() Method
