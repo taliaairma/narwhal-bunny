@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Katibeh&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.typography {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 300;
+  color: #f5a9f0;
+  line-height: 95%;
+  padding: 0 0 10rem;
+  border: 2px solid black;
+}
+
+.section-title {
+  font-size: 5rem;
+}
+
+.one {
+  background-color: yellow;
+  color: black;
+}
+
+.two {
+  background-color: yellow;
+  color: black;
+}
+
+.three {
+  background-color: yellow;
+  color: black;
+}
+
+.four {
+  background-color: yellow;
+  color: black;
+}
+
+.five {
+  background-color: yellow;
+  color: black;
+}
+
+.six {
+  background-color: yellow;
+  color: black;
+}
+
+.seven {
+  background-color: yellow;
+  color: black;
+}
+
+.eight {
+  background-color: yellow;
+  color: black;
+}
+
+.nine {
+  background-color: yellow;
+  color: black;
+}
+
+.ten {
+  background-color: yellow;
+  color: black;
+}
