@@ -910,3 +910,5 @@ Block scope allows us to define variables with precision and not pollute the glo
 
 Arrays 
 
+August 17th, 2023: 
+
