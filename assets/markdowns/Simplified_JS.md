@@ -912,3 +912,24 @@ Arrays
 
 August 17th, 2023: 
 
+The foundational concept of programming is organizing and storing data. One way to organize data in real life is by making lists. 
+
+To make a list in JavaScript as an array: 
+
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+
+Arrays are JS's way of making lists. Arrays can store any data types (including strings, numbers, and booleans). Arrays can be ordered, meaning each item has a numbered position. 
+
+Creating Arrays
+
+One way we create an array is to use an array literal. An array literal creates an array by wrapping items in square brackets []. We cnah ave an array that holds all the same data types or an array that holds different data types. 
+
+['element example', 10, true]
+
+We can also save an array to a variable.
+
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', Learn to juggle'];
+
+Accessing Elements
+
+Each element in an array has a numbered position known as its index. We can access individual items using their index, which is similar to referencing an item in a list based on the item's position 
