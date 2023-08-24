@@ -1020,4 +1020,8 @@ console.log(removed);
 - .pop() returns the value of the last element. In the example, we store the returned value in a variable removed to be used for later. 
 - .pop() is a method that mutates the inital array. 
 
+More Array Methods 
+
+.join(), .slice(), .splice(), .shift(), .unshift(), .concat() and many others. Using these built-in methods makes it easier to do some common tasks when working with arrays. 
+
 
