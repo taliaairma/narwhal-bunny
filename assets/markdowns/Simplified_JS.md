@@ -1024,4 +1024,22 @@ More Array Methods
 
 .join(), .slice(), .splice(), .shift(), .unshift(), .concat() and many others. Using these built-in methods makes it easier to do some common tasks when working with arrays. 
 
+Arrays and Functions
+
+const flowers = ['peony'. 'daffodil', 'marigold'];
+
+functions addFlower(arr) {
+  arr.push('lily');
+}
+
+addFlowers(flowers);
+
+console.log(flowers); //
+Output: ['peony', 'daffodil', 'marigold', 'lily']
+
+- The fowers array that has 3 elements. 
+- The function addFlower() has a parameter of arr uses .push() to add a 'lily' element into arr.
+- We call addFlower() with an argument of flowers which will execute the code inside addFlower.
+- We check the value of flowers and it now includes the 'lily' element! 
+
 
