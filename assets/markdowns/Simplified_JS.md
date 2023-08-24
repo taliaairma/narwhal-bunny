@@ -983,3 +983,41 @@ In the example above, we log newYearsResolutions.length to the console using the
 
 
 The .push() Method
+August 24, 2023 
+
+One method, .push(), allows us to add items to the endo f an array. 
+
+const itemTracker = ['item 0', 'item 1', 'item 2'];
+
+itemTracker.push('item 3', 'item 4');
+
+console.log(itemTracker);
+// Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+
+How does .push() work?? 
+
+- We access the push method by using dot notation, connecting push to itemTracker with a period. 
+- Then we call it like a function. That's because .push() is a function and one that JavaScript allows us t ouse right on an array. 
+- .push() can take a single argument or multiple arguments separated by commas. In this case, we're adding two elements: 'item 3' and 'item 4' to itemTracker.
+- Notice that .push() changes or mutates, itemTracker. You might also see .push() referred to as a desrtuctive array method since it changes the initial array. 
+
+The .pop() Method 
+
+The .pop() removes the last item of an array. 
+
+const newItemTracker = ['item 0', 'item 1', 'item 2'];
+
+const removed = newItemTracker.pop();
+
+console.log(newItemTracker);
+// Output: ['item 0', 'item 1'];
+
+console.log(removed);
+// Output: 'item 2'
+
+- Calling .pop() on the newItemTracker array removed item 2 from the end. 
+- .pop() does not take any arguments, it simply removes the last element of newItemTracker. 
+- .pop() returns the value of the last element. In the example, we store the returned value in a variable removed to be used for later. 
+- .pop() is a method that mutates the inital array. 
+
+
